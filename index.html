@@ -68,6 +68,7 @@
     .dato-texto {
       font-size: 1.1rem;
       color: #ffffff;
+      white-space: pre-wrap;
     }
   </style>
 </head>
@@ -78,29 +79,63 @@
 
   <div class="contenedor-datos" id="datos"></div>
 
-  <script src="formularios.js"></script>
   <script>
-    function mostrarDatos() {
-      const contenedor = document.getElementById('datos');
-      contenedor.innerHTML = ""; // limpiar
-      if (Array.isArray(datos)) {
-        datos.forEach(dato => {
-          const item = document.createElement("div");
-          item.className = "dato-item";
-
-          const img = document.createElement("img");
-          img.src = dato.imagen;
-          img.alt = "Imagen del dato";
-
-          const texto = document.createElement("div");
-          texto.className = "dato-texto";
-          texto.textContent = dato.texto;
-
-          item.appendChild(img);
-          item.appendChild(texto);
-          contenedor.appendChild(item);
-        });
+    const datosExtra = [
+      {
+        imagen: "imagen2.jpg",
+        texto: "Dato 2: Más información relevante"
+      },
+      {
+        imagen: "imagen3.jpg",
+        texto: "Dato 3: Otro dato interesante"
       }
+    ];
+
+    async function mostrarDatos() {
+      const contenedor = document.getElementById('datos');
+      contenedor.innerHTML = ""; // limpiar contenido anterior
+
+      // Dato 1: contenido del archivo formularios.js
+      try {
+        const respuesta = await fetch("formularios.js?" + Date.now());
+        const textoJS = await respuesta.text();
+
+        const item1 = document.createElement("div");
+        item1.className = "dato-item";
+
+        const img1 = document.createElement("img");
+        img1.src = "icono-js.png"; // Cambialo por tu imagen deseada
+        img1.alt = "Archivo JS";
+
+        const texto1 = document.createElement("div");
+        texto1.className = "dato-texto";
+        texto1.textContent = textoJS;
+
+        item1.appendChild(img1);
+        item1.appendChild(texto1);
+        contenedor.appendChild(item1);
+      } catch (e) {
+        console.error("Error al cargar formularios.js", e);
+      }
+
+      // Otros datos
+      datosExtra.forEach(dato => {
+        const item = document.createElement("div");
+        item.className = "dato-item";
+
+        const img = document.createElement("img");
+        img.src = dato.imagen;
+        img.alt = "Imagen del dato";
+
+        const texto = document.createElement("div");
+        texto.className = "dato-texto";
+        texto.textContent = dato.texto;
+
+        item.appendChild(img);
+        item.appendChild(texto);
+        contenedor.appendChild(item);
+      });
+
       contenedor.style.display = 'flex';
     }
   </script>
