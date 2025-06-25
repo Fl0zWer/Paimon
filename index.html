@@ -76,25 +76,32 @@
 
   <button class="boton-datos" onclick="mostrarDatos()">Datos</button>
 
-  <div class="contenedor-datos" id="datos">
-    <div class="dato-item">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <div class="dato-texto">Dato 1: Información de ejemplo</div>
-    </div>
-    <div class="dato-item">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <div class="dato-texto">Dato 2: Más información relevante</div>
-    </div>
-    <div class="dato-item">
-      <img src="imagen3.jpg" alt="Imagen 3">
-      <div class="dato-texto">Dato 3: Otro dato interesante</div>
-    </div>
-  </div>
+  <div class="contenedor-datos" id="datos"></div>
 
+  <script src="formularios.js"></script>
   <script>
     function mostrarDatos() {
-      const datos = document.getElementById('datos');
-      datos.style.display = 'flex';
+      const contenedor = document.getElementById('datos');
+      contenedor.innerHTML = ""; // limpiar
+      if (Array.isArray(datos)) {
+        datos.forEach(dato => {
+          const item = document.createElement("div");
+          item.className = "dato-item";
+
+          const img = document.createElement("img");
+          img.src = dato.imagen;
+          img.alt = "Imagen del dato";
+
+          const texto = document.createElement("div");
+          texto.className = "dato-texto";
+          texto.textContent = dato.texto;
+
+          item.appendChild(img);
+          item.appendChild(texto);
+          contenedor.appendChild(item);
+        });
+      }
+      contenedor.style.display = 'flex';
     }
   </script>
 </body>
