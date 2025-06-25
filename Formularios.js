@@ -25,4 +25,4 @@ const formularios = {
         "discord_user_id": 672496337006362634
     }
 };
-// Actualizado: Tue Jun 24 22:01:48 2025
+// Actualizado: Tue Jun 24 22:02:49 2025
