@@ -1,28 +1,16 @@
-const formularios = {
-    "1": {
-        "id": "116924766",
-        "creador": "FlozWer",
-        "usuario": "FlozWer",
-        "dificultad": "Harder",
-        "tipo": "classic",
-        "url": "",
-        "nombre": "Level Info",
-        "dificultad_icono": null,
-        "video": null,
-        "imagen": null,
-        "discord_user_id": 672496337006362634
-    },
-    "2": {
-        "id": "117266456",
-        "creador": "YunHaSeu14",
-        "usuario": "YunHaSeu14",
-        "dificultad": "Harder",
-        "tipo": "classic",
-        "url": "",
-        "dificultad_icono": null,
-        "video": null,
-        "imagen": null,
-        "discord_user_id": 672496337006362634
+export const levels = [
+    {
+        "id": "120512937",
+        "name": "",
+        "author": "FlozWer",
+        "stars": "0",
+        "difficulty": "Harder",
+        "downloads": "551",
+        "likes": "43",
+        "importance": 75,
+        "Send": [
+            "flozwer"
+        ],
+        "uniqueId": 0
     }
-};
-// Actualizado: Tue Jun 24 22:14:30 2025
+];
