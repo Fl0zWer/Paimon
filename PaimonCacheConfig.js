@@ -37,7 +37,7 @@ const configs = {
       "max_warnings": 3
     },
     "created_at": "2025-06-27 22:11:20.315950",
-    "last_updated": "2025-06-27 23:16:59.050329",
+    "last_updated": "2025-06-27 23:43:26.556178",
     "ticket_channel_id": 1388296577294270626,
     "ticket_channel_name": "tickets"
   }
