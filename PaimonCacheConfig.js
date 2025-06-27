@@ -4,8 +4,8 @@ const configs = {
     "server_name": "",
     "stage_channel_id": null,
     "stage_channel_name": null,
-    "level_channel_id": 1388274684574830812,
-    "level_channel_name": "niveles",
+    "level_channel_id": 1360012235640147978,
+    "level_channel_name": "『✦📊⋆【𝐋𝐞𝐯𝐞𝐥-𝐮𝐩】⋆✦』",
     "admin_roles": [],
     "bot_permissions": {
       "accept_levels": [
@@ -37,6 +37,6 @@ const configs = {
       "max_warnings": 3
     },
     "created_at": "2025-06-27 22:11:20.315950",
-    "last_updated": "2025-06-27 22:24:10.634349"
+    "last_updated": "2025-06-27 22:34:41.081347"
   }
 };
