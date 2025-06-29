@@ -41,5 +41,20 @@ export const levels = [
             "flozwer"
         ],
         "uniqueId": 2
+    },
+    {
+        "id": "115220652",
+        "name": "Unknown Level",
+        "author": "Darioproxdd",
+        "usuario": "Darioproxdd",
+        "stars": "0",
+        "difficulty": "Unrated",
+        "downloads": "47",
+        "likes": "1",
+        "importance": 80,
+        "Send": [
+            "flozwer"
+        ],
+        "uniqueId": 3
     }
 ];
