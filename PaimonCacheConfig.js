@@ -1,8 +1,8 @@
 const configs = {
   "1215038551755067442": {
     "server_id": "1215038551755067442",
-    "server_name": "",
-    "stage_channel_id": null,
+    "server_name": "𝐏𝐚𝐢𝐦𝐨𝐧𝐋𝐚𝐧𝐝𝐢𝐚",
+    "stage_channel_id": 1215040218495852544,
     "stage_channel_name": null,
     "level_channel_id": 1360012235640147978,
     "level_channel_name": "『✦📊⋆【𝐋𝐞𝐯𝐞𝐥-𝐮𝐩】⋆✦』",
@@ -37,7 +37,7 @@ const configs = {
       "max_warnings": 3
     },
     "created_at": "2025-06-27 22:11:20.315950",
-    "last_updated": "2025-06-28 19:10:13.449672",
+    "last_updated": "2025-06-29 18:32:10.898048",
     "ticket_channel_id": 1388296577294270626,
     "ticket_channel_name": "tickets",
     "tts_channel_id": null,
