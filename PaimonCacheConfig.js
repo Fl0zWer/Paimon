@@ -37,7 +37,7 @@ const configs = {
       "max_warnings": 3
     },
     "created_at": "2025-06-27 22:11:20.315950",
-    "last_updated": "2025-06-30 17:58:12.825008",
+    "last_updated": "2025-06-30 18:25:45.678329",
     "ticket_channel_id": 1388296577294270626,
     "ticket_channel_name": "tickets",
     "tts_channel_id": null,
@@ -12013,13 +12013,13 @@ const configs = {
     "last_full_sync": "2025-06-30T04:18:10.792279",
     "sync_performed_by": 672496337006362634,
     "bot_version_config": {
-      "bot_version": "2.1.9",
+      "bot_version": "2.1.95",
       "version_updated_by": {
         "user_id": 672496337006362634,
         "username": "flozwer",
         "display_name": "FlozWer"
       },
-      "version_updated_at": "2025-06-30T17:58:12.529291",
+      "version_updated_at": "2025-06-30T18:25:45.418186",
       "previous_version": "2.0.0"
     }
   }
