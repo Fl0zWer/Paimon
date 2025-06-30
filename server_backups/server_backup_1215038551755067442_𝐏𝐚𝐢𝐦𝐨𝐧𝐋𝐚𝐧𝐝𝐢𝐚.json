@@ -3,7 +3,7 @@
     "guild_id": 1215038551755067442,
     "guild_name": "𝐏𝐚𝐢𝐦𝐨𝐧𝐋𝐚𝐧𝐝𝐢𝐚",
     "member_count": 179,
-    "backup_date": "2025-06-30T17:58:43.556734",
+    "backup_date": "2025-06-30T18:25:52.660746",
     "backed_up_by": {
       "user_id": 672496337006362634,
       "username": "flozwer",
@@ -49,7 +49,7 @@
         "max_warnings": 3
       },
       "created_at": "2025-06-27 22:11:20.315950",
-      "last_updated": "2025-06-30 17:58:12.825008",
+      "last_updated": "2025-06-30 18:25:45.678329",
       "ticket_channel_id": 1388296577294270626,
       "ticket_channel_name": "tickets",
       "tts_channel_id": null,
@@ -12025,13 +12025,13 @@
       "last_full_sync": "2025-06-30T04:18:10.792279",
       "sync_performed_by": 672496337006362634,
       "bot_version_config": {
-        "bot_version": "2.1.9",
+        "bot_version": "2.1.95",
         "version_updated_by": {
           "user_id": 672496337006362634,
           "username": "flozwer",
           "display_name": "FlozWer"
         },
-        "version_updated_at": "2025-06-30T17:58:12.529291",
+        "version_updated_at": "2025-06-30T18:25:45.418186",
         "previous_version": "2.0.0"
       }
     },
@@ -12804,7 +12804,7 @@
       "tts_speed": 1.0,
       "tts_volume": 0.8,
       "tts_engine": "pyttsx3",
-      "bot_version": "2.1.9",
+      "bot_version": "2.1.95",
       "default_welcome_message": "¡Bienvenido {user} a **{server}**! 🎉\n\nEres nuestro miembro número **#{count}**\n\n¡Esperamos que disfrutes tu estadía!",
       "default_goodbye_message": "😢 **{username}** ha abandonado **{server}**\n\nEsperamos verte pronto de vuelta. ¡Hasta la vista!",
       "stage_channel_file": "stage_channel.txt",
@@ -13034,7 +13034,7 @@
           "max_warnings": 3
         },
         "created_at": "2025-06-27 22:11:20.315950",
-        "last_updated": "2025-06-30 17:58:12.825008",
+        "last_updated": "2025-06-30 18:25:45.678329",
         "ticket_channel_id": 1388296577294270626,
         "ticket_channel_name": "tickets",
         "tts_channel_id": null,
@@ -25010,27 +25010,27 @@
         "last_full_sync": "2025-06-30T04:18:10.792279",
         "sync_performed_by": 672496337006362634,
         "bot_version_config": {
-          "bot_version": "2.1.9",
+          "bot_version": "2.1.95",
           "version_updated_by": {
             "user_id": 672496337006362634,
             "username": "flozwer",
             "display_name": "FlozWer"
           },
-          "version_updated_at": "2025-06-30T17:58:12.529291",
+          "version_updated_at": "2025-06-30T18:25:45.418186",
           "previous_version": "2.0.0"
         }
       }
     },
     "sync_metadata": {
-      "sync_timestamp": "2025-06-30T17:58:43.556684",
-      "sync_timestamp_unix": 1751306323,
+      "sync_timestamp": "2025-06-30T18:25:52.660699",
+      "sync_timestamp_unix": 1751307952,
       "guild_id": 1215038551755067442,
       "guild_name": "𝐏𝐚𝐢𝐦𝐨𝐧𝐋𝐚𝐧𝐝𝐢𝐚",
       "guild_member_count": 179,
       "synced_by": 672496337006362634,
       "synced_by_name": "flozwer",
       "synced_by_display_name": "FlozWer",
-      "bot_version": "2.1.9",
+      "bot_version": "2.1.95",
       "bot_user_id": 1386112440852283605,
       "bot_user_name": "Paimon Bot Helper",
       "total_configs": 17,
