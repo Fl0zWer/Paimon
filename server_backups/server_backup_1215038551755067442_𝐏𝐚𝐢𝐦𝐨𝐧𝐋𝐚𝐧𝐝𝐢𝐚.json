@@ -3,7 +3,7 @@
     "guild_id": 1215038551755067442,
     "guild_name": "𝐏𝐚𝐢𝐦𝐨𝐧𝐋𝐚𝐧𝐝𝐢𝐚",
     "member_count": 178,
-    "backup_date": "2025-06-30T23:53:48.838952",
+    "backup_date": "2025-07-02T20:07:55.137189",
     "backed_up_by": {
       "user_id": 672496337006362634,
       "username": "flozwer",
@@ -49,7 +49,7 @@
         "max_warnings": 3
       },
       "created_at": "2025-06-27 22:11:20.315950",
-      "last_updated": "2025-06-30 23:53:34.878097",
+      "last_updated": "2025-07-02 17:00:15.370133",
       "ticket_channel_id": 1388296577294270626,
       "ticket_channel_name": "tickets",
       "tts_channel_id": null,
@@ -12788,6 +12788,27 @@
           "song_id": "1382827",
           "song_size": "N/A",
           "discord_user_id": 672496337006362634
+        },
+        "7": {
+          "id": "116791791",
+          "creador": "BoomKitty",
+          "usuario": "BoomKitty",
+          "dificultad": "Insano",
+          "tipo": "classic",
+          "url": "",
+          "estrellas": "8",
+          "imagen": null,
+          "video": null,
+          "descargas": "8265184",
+          "likes": "453667",
+          "length": "XL",
+          "orbs": "N/A",
+          "descripcion": "ALL THE GD PLAYERS PUT YA HANDS UP! Collab hosted by Arclia, featuring tons of amazing creators. BOOM!",
+          "song": "GEOMETRY DASH GANGSTER RAP",
+          "song_artist": "BoomKitty",
+          "song_id": "1414623",
+          "song_size": "N/A",
+          "discord_user_id": 672496337006362634
         }
       },
       "stage_channel_file": "1215040218495852544",
@@ -12804,7 +12825,7 @@
       "tts_speed": 1.0,
       "tts_volume": 0.8,
       "tts_engine": "pyttsx3",
-      "bot_version": "2.1.9",
+      "bot_version": "2.1.95",
       "default_welcome_message": "¡Bienvenido {user} a **{server}**! 🎉\n\nEres nuestro miembro número **#{count}**\n\n¡Esperamos que disfrutes tu estadía!",
       "default_goodbye_message": "😢 **{username}** ha abandonado **{server}**\n\nEsperamos verte pronto de vuelta. ¡Hasta la vista!",
       "stage_channel_file": "stage_channel.txt",
@@ -12995,7 +13016,7 @@
         "version": "2.0.0"
       },
       "stage_channel.txt": "1215040218495852544",
-      "Formularios.js": "const formularios = {\n    \"1\": {\n        \"id\": \"115018298\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"Hard\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"5\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"27,020\",\n        \"likes\": \"2,543\",\n        \"length\": \"Long\",\n        \"orbs\": \"175\",\n        \"descripcion\": \"nivel de monas chinas wujuju\",\n        \"song\": \"Toki wo Kizamu Uta (Clannad Christmas Cover)\",\n        \"song_artist\": \"Koraii\",\n        \"song_id\": \"1182231\",\n        \"song_size\": \"10.94MB\",\n        \"discord_user_id\": 672496337006362634\n    },\n    \"2\": {\n        \"id\": \"115018298\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"Hard\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"5\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"27,020\",\n        \"likes\": \"2,543\",\n        \"length\": \"Long\",\n        \"orbs\": \"175\",\n        \"descripcion\": \"nivel de monas chinas wujuju\",\n        \"song\": \"Toki wo Kizamu Uta (Clannad Christmas Cover)\",\n        \"song_artist\": \"Koraii\",\n        \"song_id\": \"1182231\",\n        \"song_size\": \"10.94MB\",\n        \"discord_user_id\": 672496337006362634,\n        \"importance\": 1\n    },\n    \"3\": {\n        \"id\": \"115710733\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"Hard\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"4\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"23,869\",\n        \"likes\": \"3,221\",\n        \"length\": \"Medium\",\n        \"orbs\": \"125\",\n        \"descripcion\": \"bastante simple la verdad\",\n        \"song\": \"cassette\",\n        \"song_artist\": \"lexycat\",\n        \"song_id\": \"1230804\",\n        \"song_size\": \"9.33MB\",\n        \"discord_user_id\": 672496337006362634\n    },\n    \"4\": {\n        \"id\": \"118943725\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"M\\u00e1s Dif\\u00edcil\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"0\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"115\",\n        \"likes\": \"17\",\n        \"length\": \"Medium\",\n        \"orbs\": \"N/A\",\n        \"descripcion\": \"proximamente un nivel de zenless zone zero\",\n        \"song\": \"SVRGE - Lust\",\n        \"song_artist\": \"SVRGE\",\n        \"song_id\": \"1213280\",\n        \"song_size\": \"N/A\",\n        \"discord_user_id\": 672496337006362634\n    },\n    \"5\": {\n        \"id\": \"119143171\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"Insano\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"0\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"142\",\n        \"likes\": \"18\",\n        \"length\": \"Medium\",\n        \"orbs\": \"N/A\",\n        \"descripcion\": \"3 horas haciendo esto en lightsync\",\n        \"song\": \"Call On Me\",\n        \"song_artist\": \"Thorne\",\n        \"song_id\": \"10010317\",\n        \"song_size\": \"N/A\",\n        \"discord_user_id\": 672496337006362634\n    },\n    \"6\": {\n        \"id\": \"118509879\",\n        \"creador\": \"YoReid\",\n        \"usuario\": \"YoReid\",\n        \"dificultad\": \"Medium Demon\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"10\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"16665671\",\n        \"likes\": \"959350\",\n        \"length\": \"XL\",\n        \"orbs\": \"N/A\",\n        \"descripcion\": \"TRAVELLER BEWARE, YOU'RE IN FOR A SCARE!\",\n        \"song\": \"Slash Inferno\",\n        \"song_artist\": \"Teminite\",\n        \"song_id\": \"1382827\",\n        \"song_size\": \"N/A\",\n        \"discord_user_id\": 672496337006362634\n    }\n};",
+      "Formularios.js": "const formularios = {\n    \"1\": {\n        \"id\": \"115018298\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"Hard\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"5\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"27,020\",\n        \"likes\": \"2,543\",\n        \"length\": \"Long\",\n        \"orbs\": \"175\",\n        \"descripcion\": \"nivel de monas chinas wujuju\",\n        \"song\": \"Toki wo Kizamu Uta (Clannad Christmas Cover)\",\n        \"song_artist\": \"Koraii\",\n        \"song_id\": \"1182231\",\n        \"song_size\": \"10.94MB\",\n        \"discord_user_id\": 672496337006362634\n    },\n    \"2\": {\n        \"id\": \"115018298\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"Hard\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"5\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"27,020\",\n        \"likes\": \"2,543\",\n        \"length\": \"Long\",\n        \"orbs\": \"175\",\n        \"descripcion\": \"nivel de monas chinas wujuju\",\n        \"song\": \"Toki wo Kizamu Uta (Clannad Christmas Cover)\",\n        \"song_artist\": \"Koraii\",\n        \"song_id\": \"1182231\",\n        \"song_size\": \"10.94MB\",\n        \"discord_user_id\": 672496337006362634,\n        \"importance\": 1\n    },\n    \"3\": {\n        \"id\": \"115710733\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"Hard\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"4\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"23,869\",\n        \"likes\": \"3,221\",\n        \"length\": \"Medium\",\n        \"orbs\": \"125\",\n        \"descripcion\": \"bastante simple la verdad\",\n        \"song\": \"cassette\",\n        \"song_artist\": \"lexycat\",\n        \"song_id\": \"1230804\",\n        \"song_size\": \"9.33MB\",\n        \"discord_user_id\": 672496337006362634\n    },\n    \"4\": {\n        \"id\": \"118943725\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"M\\u00e1s Dif\\u00edcil\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"0\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"115\",\n        \"likes\": \"17\",\n        \"length\": \"Medium\",\n        \"orbs\": \"N/A\",\n        \"descripcion\": \"proximamente un nivel de zenless zone zero\",\n        \"song\": \"SVRGE - Lust\",\n        \"song_artist\": \"SVRGE\",\n        \"song_id\": \"1213280\",\n        \"song_size\": \"N/A\",\n        \"discord_user_id\": 672496337006362634\n    },\n    \"5\": {\n        \"id\": \"119143171\",\n        \"creador\": \"FlozWer\",\n        \"usuario\": \"FlozWer\",\n        \"dificultad\": \"Insano\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"0\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"142\",\n        \"likes\": \"18\",\n        \"length\": \"Medium\",\n        \"orbs\": \"N/A\",\n        \"descripcion\": \"3 horas haciendo esto en lightsync\",\n        \"song\": \"Call On Me\",\n        \"song_artist\": \"Thorne\",\n        \"song_id\": \"10010317\",\n        \"song_size\": \"N/A\",\n        \"discord_user_id\": 672496337006362634\n    },\n    \"6\": {\n        \"id\": \"118509879\",\n        \"creador\": \"YoReid\",\n        \"usuario\": \"YoReid\",\n        \"dificultad\": \"Medium Demon\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"10\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"16665671\",\n        \"likes\": \"959350\",\n        \"length\": \"XL\",\n        \"orbs\": \"N/A\",\n        \"descripcion\": \"TRAVELLER BEWARE, YOU'RE IN FOR A SCARE!\",\n        \"song\": \"Slash Inferno\",\n        \"song_artist\": \"Teminite\",\n        \"song_id\": \"1382827\",\n        \"song_size\": \"N/A\",\n        \"discord_user_id\": 672496337006362634\n    },\n    \"7\": {\n        \"id\": \"116791791\",\n        \"creador\": \"BoomKitty\",\n        \"usuario\": \"BoomKitty\",\n        \"dificultad\": \"Insano\",\n        \"tipo\": \"classic\",\n        \"url\": \"\",\n        \"estrellas\": \"8\",\n        \"imagen\": null,\n        \"video\": null,\n        \"descargas\": \"8265184\",\n        \"likes\": \"453667\",\n        \"length\": \"XL\",\n        \"orbs\": \"N/A\",\n        \"descripcion\": \"ALL THE GD PLAYERS PUT YA HANDS UP! Collab hosted by Arclia, featuring tons of amazing creators. BOOM!\",\n        \"song\": \"GEOMETRY DASH GANGSTER RAP\",\n        \"song_artist\": \"BoomKitty\",\n        \"song_id\": \"1414623\",\n        \"song_size\": \"N/A\",\n        \"discord_user_id\": 672496337006362634\n    }\n};",
       "server_specific_config": {
         "server_id": "1215038551755067442",
         "server_name": "𝐏𝐚𝐢𝐦𝐨𝐧𝐋𝐚𝐧𝐝𝐢𝐚",
@@ -13034,7 +13055,7 @@
           "max_warnings": 3
         },
         "created_at": "2025-06-27 22:11:20.315950",
-        "last_updated": "2025-06-30 23:53:34.878097",
+        "last_updated": "2025-07-02 17:00:15.370133",
         "ticket_channel_id": 1388296577294270626,
         "ticket_channel_name": "tickets",
         "tts_channel_id": null,
@@ -25022,15 +25043,15 @@
       }
     },
     "sync_metadata": {
-      "sync_timestamp": "2025-06-30T23:53:48.838906",
-      "sync_timestamp_unix": 1751327628,
+      "sync_timestamp": "2025-07-02T20:07:55.137142",
+      "sync_timestamp_unix": 1751486875,
       "guild_id": 1215038551755067442,
       "guild_name": "𝐏𝐚𝐢𝐦𝐨𝐧𝐋𝐚𝐧𝐝𝐢𝐚",
       "guild_member_count": 178,
       "synced_by": 672496337006362634,
       "synced_by_name": "flozwer",
       "synced_by_display_name": "FlozWer",
-      "bot_version": "2.1.9",
+      "bot_version": "2.1.95",
       "bot_user_id": 1386112440852283605,
       "bot_user_name": "Paimon Bot Helper",
       "total_configs": 17,
