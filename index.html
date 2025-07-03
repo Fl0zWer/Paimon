@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PaiBot - Tu Asistente Virtual Inteligente</title>
+  <title>PaiBot #6323 - Tu Compañero de Aventuras en Discord</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
     * {
@@ -122,6 +122,7 @@
       align-items: center;
       justify-content: center;
       gap: 12px;
+      text-decoration: none;
     }
 
     .btn::before {
@@ -308,425 +309,34 @@
   </div>
 
   <div class="buttons-container">
-    <button class="btn" onclick="window.open('https://discord.com/oauth2/authorize?client_id=1386112440852283605&permissions=1759218584518135&integration_type=0&scope=bot', '_blank')">
+    <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1386112440852283605&permissions=1759218584518135&integration_type=0&scope=bot" target="_blank">
       <i class="fas fa-plus-circle"></i>
       Invitar PaiBot a tu Servidor
-    </button>
-    <button class="btn" onclick="showContent('features')">
+    </a>
+    <a class="btn" href="features.html">
       <i class="fas fa-star"></i>
       Características y Funcionalidades
-    </button>
-    <button class="btn" onclick="showContent('commands')">
+    </a>
+    <a class="btn" href="commands.html">
       <i class="fas fa-terminal"></i>
       Comandos y Guía de Uso
-    </button>
-    <button class="btn" onclick="showContent('tos')">
+    </a>
+    <a class="btn" href="terms.html">
       <i class="fas fa-file-contract"></i>
       Términos de Servicio
-    </button>
-    <button class="btn" onclick="showContent('privacy')">
+    </a>
+    <a class="btn" href="privacy.html">
       <i class="fas fa-shield-alt"></i>
       Política de Privacidad
-    </button>
-    <button class="btn" onclick="showContent('support')">
+    </a>
+    <a class="btn" href="support.html">
       <i class="fas fa-life-ring"></i>
       Centro de Ayuda y Soporte
-    </button>
+    </a>
   </div>
-
-  <!-- Características y Funcionalidades -->
-  <div class="content" id="features">
-    <div class="content-inner">
-      <div class="close" onclick="closeContent('features')">&times;</div>
-      <h2>🌟 Características y Funcionalidades de PaiBot #6323</h2>
-
-      <h3>✨ Inspirado en Paimon de Genshin Impact</h3>
-      <p>PaiBot #6323 es tu compañero de aventuras en Discord, inspirado en la querida mascota de Genshin Impact. Con una personalidad divertida y funcionalidades útiles, está diseñado para hacer tu experiencia en Discord más entretenida y productiva.</p>
-
-      <h3>🎮 Entretenimiento y Diversión</h3>
-      <ul>
-        <li><strong>Comandos Temáticos de Genshin:</strong> Referencias y easter eggs del mundo de Teyvat</li>
-        <li><strong>Juegos Interactivos:</strong> Trivia, adivinanzas y mini-juegos divertidos</li>
-        <li><strong>Generador de Memes:</strong> Crea contenido divertido para tu servidor</li>
-        <li><strong>Dados y Sorteos:</strong> Perfectos para eventos y decisiones grupales</li>
-        <li><strong>Respuestas Divertidas:</strong> Personalidad única con frases características</li>
-      </ul>
-
-      <h3>🛠️ Utilidades Prácticas</h3>
-      <ul>
-        <li><strong>Información del Servidor:</strong> Estadísticas y datos útiles de tu comunidad</li>
-        <li><strong>Gestión de Usuarios:</strong> Comandos para obtener información de miembros</li>
-        <li><strong>Herramientas de Texto:</strong> Formateo, conversiones y manipulación de texto</li>
-        <li><strong>Comandos de Ayuda:</strong> Sistema de ayuda integrado y fácil de usar</li>
-        <li><strong>Respuestas Automáticas:</strong> Configurables según las necesidades del servidor</li>
-      </ul>
-
-      <h3>� Moderación Básica</h3>
-      <ul>
-        <li><strong>Comandos de Información:</strong> Detalles sobre usuarios y servidor</li>
-        <li><strong>Gestión de Mensajes:</strong> Herramientas básicas para mantener el orden</li>
-        <li><strong>Logs de Actividad:</strong> Registro de eventos importantes del servidor</li>
-        <li><strong>Configuración Flexible:</strong> Adapta el bot a las reglas de tu comunidad</li>
-      </ul>
-
-      <h3>🎨 Personalidad Única</h3>
-      <p>PaiBot #6323 no es solo un bot funcional, sino un compañero con personalidad propia. Inspirado en Paimon, responde con carisma y humor, haciendo que cada interacción sea memorable y divertida para tu comunidad de Discord.</p>
-
-      <h3>🔧 Fácil de Usar</h3>
-      <p>Diseñado pensando en la simplicidad, PaiBot #6323 es intuitivo y fácil de configurar. No necesitas conocimientos técnicos avanzados para aprovechar todas sus funcionalidades y empezar a disfrutar de sus características únicas.</p>
-    </div>
-  </div>
-
-  <!-- Guía de Comandos -->
-  <div class="content" id="commands">
-    <div class="content-inner">
-      <div class="close" onclick="closeContent('commands')">&times;</div>
-      <h2>💻 Comandos de PaiBot #6323</h2>
-
-      <h3>🚀 Comandos Básicos</h3>
-      <ul>
-        <li><strong>!help</strong> - Muestra la lista de comandos disponibles</li>
-        <li><strong>!ping</strong> - Verifica la latencia del bot</li>
-        <li><strong>!info</strong> - Información sobre PaiBot #6323</li>
-        <li><strong>!invite</strong> - Obtén el enlace de invitación del bot</li>
-      </ul>
-
-      <h3>👤 Comandos de Usuario</h3>
-      <ul>
-        <li><strong>!userinfo [@usuario]</strong> - Información detallada de un usuario</li>
-        <li><strong>!avatar [@usuario]</strong> - Muestra el avatar de un usuario</li>
-        <li><strong>!profile [@usuario]</strong> - Perfil completo del usuario</li>
-      </ul>
-
-      <h3>🏠 Comandos de Servidor</h3>
-      <ul>
-        <li><strong>!serverinfo</strong> - Información completa del servidor</li>
-        <li><strong>!membercount</strong> - Número total de miembros</li>
-        <li><strong>!roles</strong> - Lista todos los roles del servidor</li>
-        <li><strong>!channels</strong> - Lista de canales del servidor</li>
-      </ul>
-
-      <h3>🎮 Comandos de Entretenimiento</h3>
-      <ul>
-        <li><strong>!8ball [pregunta]</strong> - La bola mágica 8 responde tus preguntas</li>
-        <li><strong>!dice [número]</strong> - Lanza dados (por defecto 1d6)</li>
-        <li><strong>!flip</strong> - Lanza una moneda</li>
-        <li><strong>!joke</strong> - Cuenta un chiste aleatorio</li>
-        <li><strong>!meme</strong> - Genera un meme aleatorio</li>
-      </ul>
-
-      <h3>✨ Comandos Temáticos de Paimon</h3>
-      <ul>
-        <li><strong>!paimon</strong> - Frases características de Paimon</li>
-        <li><strong>!emergency</strong> - "¡Comida de emergencia!" y otras frases icónicas</li>
-        <li><strong>!guide</strong> - Paimon actúa como tu guía personal</li>
-        <li><strong>!teyvat</strong> - Información aleatoria sobre el mundo de Genshin</li>
-      </ul>
-
-      <h3>🛠️ Comandos de Utilidad</h3>
-      <ul>
-        <li><strong>!say [mensaje]</strong> - Hace que el bot repita un mensaje</li>
-        <li><strong>!embed [título] [descripción]</strong> - Crea un mensaje embed</li>
-        <li><strong>!poll [pregunta]</strong> - Crea una encuesta simple</li>
-        <li><strong>!remind [tiempo] [mensaje]</strong> - Configura un recordatorio</li>
-      </ul>
-
-      <h3>� Comandos de Moderación (Solo Administradores)</h3>
-      <ul>
-        <li><strong>!clear [cantidad]</strong> - Elimina mensajes del chat</li>
-        <li><strong>!kick [@usuario] [razón]</strong> - Expulsa a un usuario</li>
-        <li><strong>!ban [@usuario] [razón]</strong> - Banea a un usuario</li>
-        <li><strong>!mute [@usuario] [tiempo]</strong> - Silencia a un usuario</li>
-        <li><strong>!warn [@usuario] [razón]</strong> - Advierte a un usuario</li>
-      </ul>
-
-      <p><strong>💡 Nota:</strong> PaiBot #6323 usa el prefijo <code>!</code> para todos sus comandos. Algunos comandos pueden requerir permisos específicos para funcionar correctamente.</p>
-
-      <p><strong>🎭 Personalidad:</strong> PaiBot responde con la personalidad característica de Paimon, incluyendo sus frases icónicas y su actitud juguetona. ¡Prepárate para muchas referencias a comida de emergencia!</p>
-    </div>
-  </div>
-
-  <!-- Términos de Servicio -->
-  <div class="content" id="tos">
-    <div class="content-inner">
-      <div class="close" onclick="closeContent('tos')">&times;</div>
-      <h2>📋 Términos de Servicio - PaiBot #6323</h2>
-
-      <h3>1. Aceptación de los Términos</h3>
-      <p>Al invitar y utilizar PaiBot #6323 en tu servidor de Discord, aceptas automáticamente estos términos de servicio. Si no estás de acuerdo con alguna parte de estos términos, debes remover el bot de tu servidor inmediatamente.</p>
-
-      <h3>2. Uso Apropiado del Bot</h3>
-      <p>PaiBot #6323 debe utilizarse de manera responsable y respetuosa. Está prohibido:</p>
-      <ul>
-        <li>Usar el bot para spam, flood o actividades maliciosas</li>
-        <li>Intentar explotar bugs o vulnerabilidades del bot</li>
-        <li>Usar comandos de manera abusiva o excesiva</li>
-        <li>Utilizar el bot para acosar o molestar a otros usuarios</li>
-        <li>Generar contenido ofensivo, discriminatorio o inapropiado</li>
-        <li>Intentar interrumpir el funcionamiento normal del bot</li>
-      </ul>
-
-      <h3>3. Funcionalidades del Bot</h3>
-      <p>PaiBot #6323 es un bot de entretenimiento y utilidad inspirado en Paimon de Genshin Impact. Las funcionalidades pueden cambiar, actualizarse o discontinuarse sin previo aviso para mejorar la experiencia del usuario.</p>
-
-      <h3>4. Disponibilidad del Servicio</h3>
-      <p>Aunque nos esforzamos por mantener PaiBot #6323 disponible la mayor parte del tiempo, no garantizamos un tiempo de actividad del 100%. El bot puede experimentar interrupciones por:</p>
-      <ul>
-        <li>Mantenimiento programado</li>
-        <li>Actualizaciones de funcionalidades</li>
-        <li>Problemas técnicos imprevistas</li>
-        <li>Limitaciones de la plataforma Discord</li>
-      </ul>
-
-      <h3>5. Moderación y Sanciones</h3>
-      <p>Nos reservamos el derecho de:</p>
-      <ul>
-        <li>Suspender el acceso al bot para usuarios que violen estos términos</li>
-        <li>Remover el bot de servidores que hagan uso indebido del mismo</li>
-        <li>Implementar limitaciones de uso para prevenir abusos</li>
-      </ul>
-
-      <h3>6. Limitación de Responsabilidad</h3>
-      <p>PaiBot #6323 se proporciona "tal como está". No somos responsables por:</p>
-      <ul>
-        <li>Daños causados por el mal uso del bot</li>
-        <li>Pérdida de datos o información</li>
-        <li>Interrupciones del servicio</li>
-        <li>Conflictos entre usuarios del servidor</li>
-      </ul>
-
-      <h3>7. Propiedad Intelectual</h3>
-      <p>PaiBot #6323 está inspirado en el personaje Paimon de Genshin Impact, propiedad de miHoYo/HoYoverse. Este bot es un proyecto de fan no oficial y no tiene afiliación con miHoYo.</p>
-
-      <h3>8. Contacto</h3>
-      <p>Para reportar problemas, sugerencias o consultas sobre estos términos, puedes contactarnos a través de los canales de soporte mencionados en la sección de ayuda.</p>
-
-      <p><strong>Última actualización:</strong> Enero 2025</p>
-    </div>
-  </div>
-
-  <!-- Política de Privacidad -->
-  <div class="content" id="privacy">
-    <div class="content-inner">
-      <div class="close" onclick="closeContent('privacy')">&times;</div>
-      <h2>🔒 Política de Privacidad - PaiBot #6323</h2>
-
-      <h3>1. Información que Recopilamos</h3>
-      <p>PaiBot #6323 recopila únicamente la información mínima necesaria para funcionar:</p>
-      <ul>
-        <li><strong>IDs de Discord:</strong> ID de usuario, servidor y canal (públicos por naturaleza)</li>
-        <li><strong>Comandos Ejecutados:</strong> Solo para responder apropiadamente</li>
-        <li><strong>Mensajes de Comando:</strong> Únicamente los que contienen comandos del bot</li>
-        <li><strong>Información Básica del Servidor:</strong> Nombre, miembros, roles (solo información pública)</li>
-      </ul>
-
-      <h3>2. Qué NO Recopilamos</h3>
-      <p>PaiBot #6323 NO recopila:</p>
-      <ul>
-        <li>Mensajes privados o conversaciones personales</li>
-        <li>Información personal identificable más allá de los IDs de Discord</li>
-        <li>Historial de mensajes no relacionados con comandos</li>
-        <li>Datos de ubicación o información del dispositivo</li>
-        <li>Información financiera o de pago</li>
-      </ul>
-
-      <h3>3. Cómo Usamos la Información</h3>
-      <p>Los datos recopilados se utilizan únicamente para:</p>
-      <ul>
-        <li>Ejecutar comandos y proporcionar respuestas</li>
-        <li>Mostrar información del servidor cuando se solicita</li>
-        <li>Funcionalidades básicas de moderación (si están habilitadas)</li>
-        <li>Mejorar el rendimiento y corregir errores</li>
-      </ul>
-
-      <h3>4. Almacenamiento de Datos</h3>
-      <p>PaiBot #6323 tiene un almacenamiento mínimo de datos:</p>
-      <ul>
-        <li>No mantenemos bases de datos permanentes de usuarios</li>
-        <li>Los datos se procesan en tiempo real y no se almacenan</li>
-        <li>Configuraciones del servidor se guardan temporalmente</li>
-        <li>Los logs se mantienen solo para depuración y se eliminan regularmente</li>
-      </ul>
-
-      <h3>5. Compartir Información</h3>
-      <p>PaiBot #6323 NO comparte información con terceros. Los datos permanecen dentro del ecosistema de Discord y nuestro bot únicamente.</p>
-
-      <h3>6. Seguridad</h3>
-      <p>Implementamos medidas básicas de seguridad:</p>
-      <ul>
-        <li>Acceso seguro a la API de Discord</li>
-        <li>Código del bot mantenido de forma segura</li>
-        <li>Sin almacenamiento de datos sensibles</li>
-        <li>Actualizaciones regulares de seguridad</li>
-      </ul>
-
-      <h3>7. Tus Derechos</h3>
-      <p>Como usuario, puedes:</p>
-      <ul>
-        <li>Dejar de usar el bot en cualquier momento</li>
-        <li>Remover el bot de tu servidor si eres administrador</li>
-        <li>Contactarnos para preguntas sobre privacidad</li>
-        <li>Solicitar información sobre qué datos procesamos</li>
-      </ul>
-
-      <h3>8. Menores de Edad</h3>
-      <p>PaiBot #6323 cumple con los términos de servicio de Discord. Los usuarios deben tener al menos 13 años (o la edad mínima requerida en su jurisdicción) para usar Discord y, por extensión, nuestro bot.</p>
-
-      <h3>9. Cambios en esta Política</h3>
-      <p>Si realizamos cambios significativos en esta política de privacidad, lo notificaremos actualizando esta página. Te recomendamos revisar esta política periódicamente.</p>
-
-      <h3>10. Contacto</h3>
-      <p>Si tienes preguntas sobre esta política de privacidad o sobre cómo PaiBot #6323 maneja tus datos, puedes contactarnos a través de los canales de soporte mencionados en la sección de ayuda.</p>
-
-      <p><strong>Última actualización:</strong> Enero 2025</p>
-    </div>
-  </div>
-
-  <!-- Centro de Ayuda y Soporte -->
-  <div class="content" id="support">
-    <div class="content-inner">
-      <div class="close" onclick="closeContent('support')">&times;</div>
-      <h2>🆘 Centro de Ayuda y Soporte - PaiBot #6323</h2>
-
-      <h3>🚀 Primeros Pasos con PaiBot #6323</h3>
-      <p>¿Acabas de invitar a PaiBot a tu servidor? ¡Perfecto! Aquí tienes todo lo que necesitas saber:</p>
-      <ul>
-        <li><strong>Invitación:</strong> Usa el botón "Invitar PaiBot" en esta página</li>
-        <li><strong>Permisos:</strong> Asegúrate de que el bot tenga permisos básicos (leer/enviar mensajes)</li>
-        <li><strong>Primer Comando:</strong> Prueba <code>!help</code> para ver todos los comandos disponibles</li>
-        <li><strong>Prefijo:</strong> Todos los comandos usan el prefijo <code>!</code></li>
-      </ul>
-
-      <h3>❓ Preguntas Frecuentes</h3>
-
-      <h4>¿Por qué PaiBot #6323 no responde a mis comandos?</h4>
-      <p>Verifica lo siguiente:</p>
-      <ul>
-        <li>Estás usando el prefijo correcto: <code>!</code></li>
-        <li>El bot tiene permisos para leer y enviar mensajes en el canal</li>
-        <li>El comando está escrito correctamente (usa <code>!help</code> para ver la lista)</li>
-        <li>El bot está en línea (aparece como activo en la lista de miembros)</li>
-      </ul>
-
-      <h4>¿Qué permisos necesita PaiBot #6323?</h4>
-      <p>Para funcionar correctamente, PaiBot necesita:</p>
-      <ul>
-        <li><strong>Básicos:</strong> Leer mensajes, enviar mensajes, insertar enlaces</li>
-        <li><strong>Para embeds:</strong> Insertar enlaces, adjuntar archivos</li>
-        <li><strong>Para moderación:</strong> Gestionar mensajes, expulsar miembros, banear miembros</li>
-        <li><strong>Para roles:</strong> Gestionar roles (solo si usas comandos de roles)</li>
-      </ul>
-
-      <h4>¿PaiBot #6323 funciona en mensajes directos?</h4>
-      <p>Algunos comandos básicos funcionan en DM, pero la mayoría están diseñados para uso en servidores. Los comandos de servidor obviamente no funcionarán en mensajes privados.</p>
-
-      <h4>¿Cómo puedo personalizar las respuestas del bot?</h4>
-      <p>PaiBot #6323 tiene una personalidad fija inspirada en Paimon, pero puedes sugerir nuevas frases o funcionalidades contactando al desarrollador.</p>
-
-      <h3>🔧 Solución de Problemas Comunes</h3>
-
-      <h4>El bot no aparece en línea</h4>
-      <ul>
-        <li>Verifica que el bot esté correctamente invitado al servidor</li>
-        <li>Comprueba que no haya sido expulsado o baneado accidentalmente</li>
-        <li>El bot puede estar en mantenimiento temporal</li>
-      </ul>
-
-      <h4>Los comandos de moderación no funcionan</h4>
-      <ul>
-        <li>Verifica que tengas permisos de administrador o moderador</li>
-        <li>Asegúrate de que PaiBot tenga los permisos necesarios</li>
-        <li>El rol del bot debe estar por encima del rol del usuario objetivo</li>
-      </ul>
-
-      <h4>El bot responde lentamente</h4>
-      <ul>
-        <li>Esto puede deberse a la latencia de Discord</li>
-        <li>Usa <code>!ping</code> para verificar la latencia</li>
-        <li>Si persiste, puede ser un problema temporal del hosting</li>
-      </ul>
-
-      <h3>🎭 Características Especiales de Paimon</h3>
-      <p>PaiBot #6323 tiene algunas características únicas:</p>
-      <ul>
-        <li><strong>Personalidad:</strong> Responde con el estilo característico de Paimon</li>
-        <li><strong>Frases Icónicas:</strong> Incluye referencias a "comida de emergencia" y otras frases famosas</li>
-        <li><strong>Temática Genshin:</strong> Comandos especiales relacionados con el mundo de Teyvat</li>
-        <li><strong>Diversión:</strong> Diseñado para ser entretenido y alegrar tu servidor</li>
-      </ul>
-
-      <h3>📞 Contacto y Soporte</h3>
-      <p>Si necesitas ayuda adicional:</p>
-      <ul>
-        <li><strong>Desarrollador:</strong> Contacta al creador del bot para soporte directo</li>
-        <li><strong>Reportar Bugs:</strong> Informa cualquier problema o error que encuentres</li>
-        <li><strong>Sugerencias:</strong> Comparte ideas para nuevas funcionalidades</li>
-        <li><strong>Feedback:</strong> Tu opinión es importante para mejorar el bot</li>
-      </ul>
-
-      <h3>� Consejos para Aprovechar al Máximo PaiBot #6323</h3>
-      <ul>
-        <li>Usa <code>!help</code> regularmente para descubrir nuevos comandos</li>
-        <li>Experimenta con los comandos temáticos de Paimon</li>
-        <li>Configura los permisos adecuados para cada funcionalidad</li>
-        <li>Comparte el bot con otros servidores si te gusta</li>
-        <li>Mantente al día con las actualizaciones y nuevas funciones</li>
-      </ul>
-    </div>
-  </div>
-
-
 
   <script>
-    function showContent(id) {
-      // Cerrar cualquier contenido abierto
-      const allContent = document.querySelectorAll('.content');
-      allContent.forEach(content => {
-        content.style.display = 'none';
-      });
-
-      // Mostrar el contenido seleccionado
-      const selectedContent = document.getElementById(id);
-      if (selectedContent) {
-        selectedContent.style.display = 'block';
-        // Scroll al inicio del contenido
-        selectedContent.scrollTop = 0;
-      }
-
-      // Prevenir scroll del body
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeContent(id) {
-      const content = document.getElementById(id);
-      if (content) {
-        content.style.display = 'none';
-      }
-
-      // Restaurar scroll del body
-      document.body.style.overflow = 'auto';
-    }
-
-    // Cerrar contenido con tecla Escape
-    document.addEventListener('keydown', function(event) {
-      if (event.key === 'Escape') {
-        const openContent = document.querySelector('.content[style*="block"]');
-        if (openContent) {
-          openContent.style.display = 'none';
-          document.body.style.overflow = 'auto';
-        }
-      }
-    });
-
-    // Cerrar contenido al hacer clic fuera
-    document.addEventListener('click', function(event) {
-      if (event.target.classList.contains('content')) {
-        event.target.style.display = 'none';
-        document.body.style.overflow = 'auto';
-      }
-    });
-
-    // Animación de partículas de fondo
+    // Crear partículas periódicamente (reducido para evitar problemas de rendimiento)
     function createParticle() {
       const particle = document.createElement('div');
       particle.style.position = 'absolute';
@@ -756,7 +366,6 @@
       };
     }
 
-    // Crear partículas periódicamente (reducido para evitar problemas de rendimiento)
     setInterval(createParticle, 800);
   </script>
 </body>
