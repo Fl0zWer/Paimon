@@ -590,3 +590,187 @@
       </ul>
     </div>
   </div>
+
+  <!-- Actualizaciones y Novedades -->
+  <div class="content" id="updates">
+    <div class="content-inner">
+      <div class="close" onclick="closeContent('updates')">&times;</div>
+      <h2>🚀 Actualizaciones y Novedades Recientes</h2>
+
+      <h3>🆕 Versión 3.2.0 - Enero 2024</h3>
+      <p><strong>Nuevas Funcionalidades Principales:</strong></p>
+      <ul>
+        <li><strong>IA Conversacional Mejorada:</strong> Respuestas más naturales y contextualmente relevantes</li>
+        <li><strong>Sistema de Niveles Gamificado:</strong> Los usuarios ganan XP y desbloquean recompensas</li>
+        <li><strong>Comandos de Voz:</strong> Interacción por voz en canales compatibles</li>
+        <li><strong>Dashboard Web:</strong> Panel de control web para administradores</li>
+        <li><strong>Integración con APIs Externas:</strong> Noticias, clima, criptomonedas en tiempo real</li>
+      </ul>
+
+      <p><strong>Mejoras de Rendimiento:</strong></p>
+      <ul>
+        <li>Reducción del 40% en tiempo de respuesta promedio</li>
+        <li>Optimización de memoria para servidores grandes</li>
+        <li>Mejor manejo de picos de tráfico</li>
+        <li>Sistema de caché inteligente implementado</li>
+      </ul>
+
+      <h3>🔧 Versión 3.1.5 - Diciembre 2023</h3>
+      <p><strong>Correcciones y Mejoras:</strong></p>
+      <ul>
+        <li>Solucionado problema con comandos de música en algunos servidores</li>
+        <li>Mejorada la precisión del sistema de moderación automática</li>
+        <li>Optimizadas las consultas de base de datos para mejor rendimiento</li>
+        <li>Agregado soporte para nuevos formatos de archivo</li>
+        <li>Corregidos errores menores en la interfaz de configuración</li>
+      </ul>
+
+      <h3>✨ Versión 3.1.0 - Noviembre 2023</h3>
+      <p><strong>Funcionalidades Destacadas:</strong></p>
+      <ul>
+        <li><strong>Modo Streaming:</strong> Integración con Twitch y YouTube para notificaciones</li>
+        <li><strong>Eventos Programados:</strong> Sistema de recordatorios y eventos del servidor</li>
+        <li><strong>Encuestas Avanzadas:</strong> Votaciones con múltiples opciones y análisis</li>
+        <li><strong>Sistema de Tickets:</strong> Soporte automatizado para usuarios</li>
+        <li><strong>Comandos Slash Mejorados:</strong> Interfaz más intuitiva y rápida</li>
+      </ul>
+
+      <h3>🎯 Próximas Actualizaciones (Roadmap 2024)</h3>
+      <p><strong>En Desarrollo:</strong></p>
+      <ul>
+        <li><strong>Q1 2024:</strong> Integración con ChatGPT-4 para conversaciones avanzadas</li>
+        <li><strong>Q2 2024:</strong> Sistema de economía virtual con tienda y recompensas</li>
+        <li><strong>Q3 2024:</strong> Soporte para realidad aumentada en comandos visuales</li>
+        <li><strong>Q4 2024:</strong> IA de moderación predictiva y análisis de sentimientos</li>
+      </ul>
+
+      <p><strong>Funciones Solicitadas por la Comunidad:</strong></p>
+      <ul>
+        <li>Sistema de clanes y competencias entre servidores</li>
+        <li>Integración con calendarios externos (Google Calendar, Outlook)</li>
+        <li>Comandos de productividad para equipos de trabajo</li>
+        <li>Soporte para NFTs y blockchain</li>
+        <li>Sistema de backup automático de configuraciones</li>
+      </ul>
+
+      <h3>📊 Estadísticas de Crecimiento</h3>
+      <ul>
+        <li><strong>Servidores Activos:</strong> Más de 50,000 servidores utilizando PaiBot</li>
+        <li><strong>Usuarios Únicos:</strong> Más de 2 millones de usuarios interactúan mensualmente</li>
+        <li><strong>Comandos Ejecutados:</strong> Más de 100 millones de comandos procesados</li>
+        <li><strong>Tiempo de Actividad:</strong> 99.9% de disponibilidad en los últimos 12 meses</li>
+        <li><strong>Satisfacción:</strong> 4.8/5 estrellas en valoraciones de usuarios</li>
+      </ul>
+
+      <h3>🏆 Reconocimientos y Premios</h3>
+      <ul>
+        <li><strong>Bot del Año 2023:</strong> Mejor Bot de Utilidad - Discord Community Awards</li>
+        <li><strong>Innovación Tecnológica:</strong> Premio a la Mejor Implementación de IA</li>
+        <li><strong>Comunidad Favorita:</strong> Elegido por más de 100,000 usuarios</li>
+        <li><strong>Desarrollo Sostenible:</strong> Certificación de prácticas eco-friendly</li>
+      </ul>
+
+      <h3>💝 Agradecimientos Especiales</h3>
+      <p>Queremos agradecer a nuestra increíble comunidad de usuarios, beta testers, y colaboradores que hacen posible el continuo desarrollo y mejora de PaiBot. Sus sugerencias, reportes de bugs y feedback constante son invaluables para nosotros.</p>
+
+      <p><strong>¿Quieres ser parte del desarrollo?</strong> Únete a nuestro programa de beta testing y sé el primero en probar las nuevas funcionalidades antes de su lanzamiento oficial.</p>
+
+      <p><strong>Última actualización del changelog:</strong> 15 de Enero, 2024</p>
+    </div>
+  </div>
+
+  <script>
+    function showContent(id) {
+      // Cerrar cualquier contenido abierto
+      const allContent = document.querySelectorAll('.content');
+      allContent.forEach(content => {
+        content.style.display = 'none';
+      });
+
+      // Mostrar el contenido seleccionado
+      const selectedContent = document.getElementById(id);
+      if (selectedContent) {
+        selectedContent.style.display = 'block';
+        // Scroll al inicio del contenido
+        selectedContent.scrollTop = 0;
+      }
+
+      // Prevenir scroll del body
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeContent(id) {
+      const content = document.getElementById(id);
+      if (content) {
+        content.style.display = 'none';
+      }
+
+      // Restaurar scroll del body
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cerrar contenido con tecla Escape
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const openContent = document.querySelector('.content[style*="block"]');
+        if (openContent) {
+          openContent.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      }
+    });
+
+    // Cerrar contenido al hacer clic fuera
+    document.addEventListener('click', function(event) {
+      if (event.target.classList.contains('content')) {
+        event.target.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Animación de partículas de fondo
+    function createParticle() {
+      const particle = document.createElement('div');
+      particle.style.position = 'absolute';
+      particle.style.width = Math.random() * 4 + 1 + 'px';
+      particle.style.height = particle.style.width;
+      particle.style.background = 'rgba(255, 255, 255, 0.1)';
+      particle.style.borderRadius = '50%';
+      particle.style.left = Math.random() * window.innerWidth + 'px';
+      particle.style.top = window.innerHeight + 'px';
+      particle.style.pointerEvents = 'none';
+      particle.style.zIndex = '1';
+
+      document.body.appendChild(particle);
+
+      const duration = Math.random() * 3000 + 2000;
+      const drift = (Math.random() - 0.5) * 100;
+
+      particle.animate([
+        { transform: 'translateY(0px) translateX(0px)', opacity: 0 },
+        { transform: `translateY(-${window.innerHeight + 100}px) translateX(${drift}px)`, opacity: 1 },
+        { transform: `translateY(-${window.innerHeight + 200}px) translateX(${drift * 2}px)`, opacity: 0 }
+      ], {
+        duration: duration,
+        easing: 'linear'
+      }).onfinish = () => {
+        particle.remove();
+      };
+    }
+
+    // Crear partículas periódicamente
+    setInterval(createParticle, 300);
+
+    // Efecto de hover mejorado para botones
+    document.querySelectorAll('.btn').forEach(button => {
+      button.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px) scale(1.02)';
+      });
+
+      button.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>
