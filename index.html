@@ -3,122 +3,590 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PaiBot</title>
+  <title>PaiBot - Tu Asistente Virtual Inteligente</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
-      height: 100vh;
-      background: linear-gradient(135deg, #1b1f3b, #4e2d92);
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0f23, #1a1a3a, #2d1b69, #4c2885);
+      background-size: 400% 400%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      overflow: hidden;
-      animation: backgroundShift 10s ease-in-out infinite alternate;
+      overflow-x: hidden;
+      animation: gradientShift 15s ease-in-out infinite;
+      position: relative;
     }
 
-    @keyframes backgroundShift {
-      0% {
-        background: linear-gradient(135deg, #1b1f3b, #4e2d92);
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% {
+        background-position: 0% 50%;
       }
-      100% {
-        background: linear-gradient(135deg, #2a2f5c, #6b3fc5);
+      50% {
+        background-position: 100% 50%;
       }
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 60px;
+      z-index: 10;
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
+      font-weight: 800;
       color: white;
-      margin-bottom: 40px;
-      text-shadow: 0 0 20px #00000055;
+      margin-bottom: 20px;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+      background: linear-gradient(45deg, #fff, #a78bfa, #60a5fa);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: titleGlow 3s ease-in-out infinite alternate;
     }
 
-    .buttons {
+    @keyframes titleGlow {
+      0% {
+        filter: drop-shadow(0 0 20px rgba(167, 139, 250, 0.5));
+      }
+      100% {
+        filter: drop-shadow(0 0 40px rgba(96, 165, 250, 0.8));
+      }
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 10px;
+      font-weight: 300;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.6);
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .buttons-container {
       display: flex;
-      gap: 30px;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      max-width: 1200px;
+      z-index: 10;
     }
 
     .btn {
-      background: rgba(255, 255, 255, 0.1);
-      border: 2px solid white;
-      padding: 15px 30px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 20px 35px;
       color: white;
-      font-size: 1.2rem;
-      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 15px;
       cursor: pointer;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(20px);
+      box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+      min-width: 280px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: left 0.6s;
+    }
+
+    .btn:hover::before {
+      left: 100%;
     }
 
     .btn:hover {
-      background: white;
-      color: #4e2d92;
-      transform: scale(1.05);
-      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .btn:active {
+      transform: translateY(-2px) scale(1.01);
+    }
+
+    .btn i {
+      font-size: 1.3rem;
+      opacity: 0.9;
     }
 
     .content {
       display: none;
-      position: absolute;
-      top: 20%;
-      width: 60%;
-      padding: 30px;
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
       overflow-y: auto;
-      max-height: 70%;
-      animation: fadeIn 0.4s ease;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .content-inner {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(20px);
+      color: white;
+      position: relative;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     .close {
       position: absolute;
-      top: 10px;
-      right: 20px;
+      top: 20px;
+      right: 25px;
       cursor: pointer;
-      font-size: 1.5rem;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.7);
+      transition: all 0.3s ease;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .close:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.2);
+      transform: rotate(90deg);
+    }
+
+    .content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #a78bfa;
+      font-weight: 700;
+    }
+
+    .content h3 {
+      font-size: 1.8rem;
+      margin: 30px 0 15px 0;
+      color: #60a5fa;
+      font-weight: 600;
+    }
+
+    .content p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .content ul {
+      margin: 20px 0;
+      padding-left: 30px;
+    }
+
+    .content li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      .buttons-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        min-width: 250px;
+      }
+
+      .content-inner {
+        margin: 20px;
+        padding: 30px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>PaiBot</h1>
-  <div class="buttons">
-    <button class="btn" onclick="showContent('tos')">Términos y Servicios</button>
-    <button class="btn" onclick="showContent('privacy')">Política de Privacidad</button>
+  <div class="header">
+    <h1>PaiBot</h1>
+    <p class="subtitle">Tu Asistente Virtual Inteligente</p>
+    <p class="description">Descubre todas las funcionalidades y políticas de nuestro bot de Discord más avanzado</p>
   </div>
 
+  <div class="buttons-container">
+    <button class="btn" onclick="showContent('features')">
+      <i class="fas fa-star"></i>
+      Características y Funcionalidades Principales
+    </button>
+    <button class="btn" onclick="showContent('commands')">
+      <i class="fas fa-terminal"></i>
+      Guía Completa de Comandos y Uso
+    </button>
+    <button class="btn" onclick="showContent('tos')">
+      <i class="fas fa-file-contract"></i>
+      Términos de Servicio y Condiciones de Uso
+    </button>
+    <button class="btn" onclick="showContent('privacy')">
+      <i class="fas fa-shield-alt"></i>
+      Política de Privacidad y Protección de Datos
+    </button>
+    <button class="btn" onclick="showContent('support')">
+      <i class="fas fa-life-ring"></i>
+      Centro de Ayuda y Soporte Técnico
+    </button>
+    <button class="btn" onclick="showContent('updates')">
+      <i class="fas fa-rocket"></i>
+      Actualizaciones y Novedades Recientes
+    </button>
+  </div>
+
+  <!-- Características y Funcionalidades -->
+  <div class="content" id="features">
+    <div class="content-inner">
+      <div class="close" onclick="closeContent('features')">&times;</div>
+      <h2>🌟 Características y Funcionalidades Principales</h2>
+
+      <h3>🤖 Inteligencia Artificial Avanzada</h3>
+      <p>PaiBot utiliza tecnología de IA de última generación para proporcionar respuestas inteligentes y contextualmente relevantes. Nuestro sistema de procesamiento de lenguaje natural permite conversaciones fluidas y naturales.</p>
+
+      <h3>🎮 Entretenimiento y Juegos</h3>
+      <ul>
+        <li><strong>Juegos Interactivos:</strong> Trivia, adivinanzas, juegos de palabras y desafíos mentales</li>
+        <li><strong>Generador de Memes:</strong> Crea memes personalizados con plantillas populares</li>
+        <li><strong>Dados y Sorteos:</strong> Funciones de aleatoriedad para tomar decisiones</li>
+        <li><strong>Música y Audio:</strong> Reproduce música, efectos de sonido y clips de audio</li>
+      </ul>
+
+      <h3>🛠️ Herramientas de Productividad</h3>
+      <ul>
+        <li><strong>Recordatorios Inteligentes:</strong> Sistema avanzado de notificaciones programables</li>
+        <li><strong>Calculadora Científica:</strong> Operaciones matemáticas complejas y conversiones</li>
+        <li><strong>Traductor Multiidioma:</strong> Soporte para más de 100 idiomas diferentes</li>
+        <li><strong>Generador de Contraseñas:</strong> Contraseñas seguras con criterios personalizables</li>
+      </ul>
+
+      <h3>📊 Gestión de Servidor</h3>
+      <ul>
+        <li><strong>Moderación Automática:</strong> Filtros de contenido y sistema de advertencias</li>
+        <li><strong>Logs Detallados:</strong> Registro completo de actividades del servidor</li>
+        <li><strong>Roles Automáticos:</strong> Asignación inteligente basada en actividad</li>
+        <li><strong>Estadísticas Avanzadas:</strong> Métricas detalladas de uso y participación</li>
+      </ul>
+
+      <h3>🎨 Personalización Total</h3>
+      <p>Configura PaiBot según las necesidades específicas de tu servidor. Desde comandos personalizados hasta respuestas automáticas, todo es completamente personalizable para crear una experiencia única.</p>
+    </div>
+  </div>
+
+  <!-- Guía de Comandos -->
+  <div class="content" id="commands">
+    <div class="content-inner">
+      <div class="close" onclick="closeContent('commands')">&times;</div>
+      <h2>💻 Guía Completa de Comandos y Uso</h2>
+
+      <h3>🚀 Comandos Básicos de Inicio</h3>
+      <ul>
+        <li><strong>/help</strong> - Muestra la lista completa de comandos disponibles</li>
+        <li><strong>/info</strong> - Información detallada sobre PaiBot y sus capacidades</li>
+        <li><strong>/ping</strong> - Verifica la latencia y estado de conexión del bot</li>
+        <li><strong>/version</strong> - Muestra la versión actual y últimas actualizaciones</li>
+      </ul>
+
+      <h3>🎮 Comandos de Entretenimiento</h3>
+      <ul>
+        <li><strong>/trivia [categoría]</strong> - Inicia un juego de trivia con diferentes temas</li>
+        <li><strong>/meme [plantilla] [texto]</strong> - Genera memes personalizados</li>
+        <li><strong>/joke</strong> - Cuenta un chiste aleatorio de nuestra base de datos</li>
+        <li><strong>/roll [dados]d[caras]</strong> - Lanza dados personalizables</li>
+        <li><strong>/8ball [pregunta]</strong> - La clásica bola 8 mágica para decisiones</li>
+        <li><strong>/quote</strong> - Comparte una cita inspiradora aleatoria</li>
+      </ul>
+
+      <h3>🔧 Comandos de Utilidad</h3>
+      <ul>
+        <li><strong>/remind [tiempo] [mensaje]</strong> - Configura recordatorios personalizados</li>
+        <li><strong>/calc [expresión]</strong> - Calculadora científica avanzada</li>
+        <li><strong>/translate [idioma] [texto]</strong> - Traduce texto a cualquier idioma</li>
+        <li><strong>/weather [ciudad]</strong> - Información meteorológica detallada</li>
+        <li><strong>/password [longitud]</strong> - Genera contraseñas seguras</li>
+        <li><strong>/qr [texto]</strong> - Crea códigos QR personalizados</li>
+      </ul>
+
+      <h3>👑 Comandos de Moderación (Solo Administradores)</h3>
+      <ul>
+        <li><strong>/ban [usuario] [razón]</strong> - Banea usuarios con registro de motivos</li>
+        <li><strong>/kick [usuario] [razón]</strong> - Expulsa usuarios temporalmente</li>
+        <li><strong>/mute [usuario] [tiempo]</strong> - Silencia usuarios por tiempo determinado</li>
+        <li><strong>/warn [usuario] [razón]</strong> - Sistema de advertencias progresivas</li>
+        <li><strong>/purge [cantidad]</strong> - Elimina mensajes en lote de forma segura</li>
+        <li><strong>/slowmode [segundos]</strong> - Configura modo lento en canales</li>
+      </ul>
+
+      <h3>📈 Comandos de Estadísticas</h3>
+      <ul>
+        <li><strong>/stats server</strong> - Estadísticas completas del servidor</li>
+        <li><strong>/stats user [@usuario]</strong> - Estadísticas de actividad de usuarios</li>
+        <li><strong>/leaderboard [tipo]</strong> - Rankings de actividad y participación</li>
+        <li><strong>/activity</strong> - Gráficos de actividad del servidor</li>
+      </ul>
+
+      <p><strong>💡 Consejo:</strong> Usa <code>/help [comando]</code> para obtener información detallada sobre cualquier comando específico, incluyendo ejemplos de uso y parámetros opcionales.</p>
+    </div>
+  </div>
+
+  <!-- Términos de Servicio -->
   <div class="content" id="tos">
-    <div class="close" onclick="closeContent('tos')">&times;</div>
-    <h2>Términos y Servicios</h2>
-    <p>Al utilizar PaiBot, aceptas no usarlo para actividades maliciosas, spam o contenido ofensivo. El equipo desarrollador se reserva el derecho de restringir acceso a usuarios que abusen del servicio. Nos reservamos el derecho de modificar estos términos en cualquier momento, y te notificaremos mediante los canales oficiales.</p>
+    <div class="content-inner">
+      <div class="close" onclick="closeContent('tos')">&times;</div>
+      <h2>📋 Términos de Servicio y Condiciones de Uso</h2>
+
+      <h3>1. Aceptación de los Términos</h3>
+      <p>Al utilizar PaiBot en cualquier servidor de Discord, usted acepta automáticamente estos términos de servicio en su totalidad. Si no está de acuerdo con alguna parte de estos términos, debe discontinuar el uso del bot inmediatamente.</p>
+
+      <h3>2. Uso Apropiado del Servicio</h3>
+      <p>PaiBot debe utilizarse de manera responsable y ética. Está estrictamente prohibido:</p>
+      <ul>
+        <li>Usar el bot para actividades maliciosas, ilegales o que violen las políticas de Discord</li>
+        <li>Intentar explotar vulnerabilidades o realizar ingeniería inversa del sistema</li>
+        <li>Generar spam, contenido ofensivo, discriminatorio o que incite al odio</li>
+        <li>Utilizar el bot para acosar, intimidar o molestar a otros usuarios</li>
+        <li>Compartir contenido protegido por derechos de autor sin autorización</li>
+        <li>Intentar sobrecargar o interrumpir el funcionamiento del bot</li>
+      </ul>
+
+      <h3>3. Disponibilidad del Servicio</h3>
+      <p>Nos esforzamos por mantener PaiBot disponible 24/7, pero no garantizamos un tiempo de actividad del 100%. El servicio puede experimentar interrupciones por mantenimiento, actualizaciones o circunstancias imprevistas.</p>
+
+      <h3>4. Modificaciones y Actualizaciones</h3>
+      <p>Nos reservamos el derecho de modificar, actualizar o discontinuar funcionalidades de PaiBot en cualquier momento. Los usuarios serán notificados de cambios significativos a través de nuestros canales oficiales.</p>
+
+      <h3>5. Limitación de Responsabilidad</h3>
+      <p>PaiBot se proporciona "tal como está" sin garantías de ningún tipo. No somos responsables por daños directos, indirectos, incidentales o consecuentes que puedan resultar del uso del bot.</p>
+
+      <h3>6. Suspensión y Terminación</h3>
+      <p>Nos reservamos el derecho de suspender o restringir el acceso a PaiBot para usuarios o servidores que violen estos términos, sin previo aviso y a nuestra sola discreción.</p>
+
+      <h3>7. Contacto y Disputas</h3>
+      <p>Para cualquier consulta sobre estos términos o para reportar violaciones, contacte a nuestro equipo de soporte a través de los canales oficiales mencionados en la sección de ayuda.</p>
+
+      <p><strong>Última actualización:</strong> Enero 2024</p>
+    </div>
   </div>
 
+  <!-- Política de Privacidad -->
   <div class="content" id="privacy">
-    <div class="close" onclick="closeContent('privacy')">&times;</div>
-    <h2>Política de Privacidad</h2>
-    <p>PaiBot recopila información básica como tu ID de usuario, servidor y comandos utilizados únicamente para brindar sus funciones. No compartimos esta información con terceros, ni la utilizamos con fines comerciales. Puedes contactarnos en cualquier momento para solicitar la eliminación de tus datos.</p>
+    <div class="content-inner">
+      <div class="close" onclick="closeContent('privacy')">&times;</div>
+      <h2>🔒 Política de Privacidad y Protección de Datos</h2>
+
+      <h3>1. Información que Recopilamos</h3>
+      <p>PaiBot recopila únicamente la información necesaria para proporcionar sus servicios:</p>
+      <ul>
+        <li><strong>Identificadores de Usuario:</strong> ID de Discord, nombre de usuario y discriminador</li>
+        <li><strong>Información del Servidor:</strong> ID del servidor, nombre y configuraciones específicas</li>
+        <li><strong>Datos de Interacción:</strong> Comandos utilizados, frecuencia de uso y preferencias</li>
+        <li><strong>Mensajes Procesados:</strong> Solo cuando es necesario para funcionalidades específicas</li>
+        <li><strong>Datos de Configuración:</strong> Ajustes personalizados y preferencias del servidor</li>
+      </ul>
+
+      <h3>2. Cómo Utilizamos su Información</h3>
+      <p>Los datos recopilados se utilizan exclusivamente para:</p>
+      <ul>
+        <li>Proporcionar y mejorar las funcionalidades del bot</li>
+        <li>Personalizar la experiencia del usuario</li>
+        <li>Generar estadísticas anónimas de uso</li>
+        <li>Detectar y prevenir abusos del servicio</li>
+        <li>Cumplir con obligaciones legales cuando sea requerido</li>
+      </ul>
+
+      <h3>3. Compartir Información</h3>
+      <p>Nunca vendemos, alquilamos o compartimos su información personal con terceros, excepto:</p>
+      <ul>
+        <li>Cuando sea requerido por ley o autoridades competentes</li>
+        <li>Para proteger nuestros derechos legales o la seguridad de los usuarios</li>
+        <li>Con proveedores de servicios que nos ayudan a operar el bot (bajo estrictos acuerdos de confidencialidad)</li>
+      </ul>
+
+      <h3>4. Seguridad de los Datos</h3>
+      <p>Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información:</p>
+      <ul>
+        <li>Encriptación de datos en tránsito y en reposo</li>
+        <li>Acceso restringido a información personal</li>
+        <li>Auditorías regulares de seguridad</li>
+        <li>Sistemas de monitoreo y detección de intrusiones</li>
+      </ul>
+
+      <h3>5. Retención de Datos</h3>
+      <p>Conservamos su información solo durante el tiempo necesario para proporcionar nuestros servicios. Los datos de configuración se eliminan cuando el bot es removido de un servidor.</p>
+
+      <h3>6. Sus Derechos</h3>
+      <p>Usted tiene derecho a:</p>
+      <ul>
+        <li>Solicitar acceso a su información personal</li>
+        <li>Corregir datos inexactos o incompletos</li>
+        <li>Solicitar la eliminación de sus datos</li>
+        <li>Retirar su consentimiento en cualquier momento</li>
+        <li>Presentar quejas ante autoridades de protección de datos</li>
+      </ul>
+
+      <h3>7. Cookies y Tecnologías Similares</h3>
+      <p>PaiBot no utiliza cookies web, pero puede almacenar datos localmente en Discord para mejorar la funcionalidad y experiencia del usuario.</p>
+
+      <h3>8. Cambios en esta Política</h3>
+      <p>Nos reservamos el derecho de actualizar esta política de privacidad. Los cambios significativos serán comunicados a través de nuestros canales oficiales.</p>
+
+      <p><strong>Contacto para Privacidad:</strong> Para ejercer sus derechos o hacer consultas sobre privacidad, utilice nuestros canales de soporte oficial.</p>
+
+      <p><strong>Última actualización:</strong> Enero 2024</p>
+    </div>
   </div>
 
-  <script>
-    function showContent(id) {
-      document.getElementById(id).style.display = 'block';
-    }
-    function closeContent(id) {
-      document.getElementById(id).style.display = 'none';
-    }
-  </script>
-</body>
-</html>
+  <!-- Centro de Ayuda y Soporte -->
+  <div class="content" id="support">
+    <div class="content-inner">
+      <div class="close" onclick="closeContent('support')">&times;</div>
+      <h2>🆘 Centro de Ayuda y Soporte Técnico</h2>
+
+      <h3>🚀 Primeros Pasos</h3>
+      <p>¿Nuevo con PaiBot? Aquí tienes todo lo que necesitas para comenzar:</p>
+      <ul>
+        <li><strong>Invitación:</strong> Usa el enlace oficial para invitar PaiBot a tu servidor</li>
+        <li><strong>Permisos:</strong> Asegúrate de otorgar los permisos necesarios para un funcionamiento óptimo</li>
+        <li><strong>Configuración Inicial:</strong> Ejecuta <code>/setup</code> para configurar las opciones básicas</li>
+        <li><strong>Primer Comando:</strong> Prueba con <code>/help</code> para ver todas las funcionalidades</li>
+      </ul>
+
+      <h3>❓ Preguntas Frecuentes</h3>
+
+      <h4>¿Por qué PaiBot no responde a mis comandos?</h4>
+      <p>Verifica que:</p>
+      <ul>
+        <li>El bot tenga permisos para leer mensajes en el canal</li>
+        <li>Estés usando la sintaxis correcta de comandos (con / al inicio)</li>
+        <li>El bot no esté en mantenimiento (verifica nuestro estado en línea)</li>
+      </ul>
+
+      <h4>¿Cómo configuro comandos personalizados?</h4>
+      <p>Los administradores pueden usar <code>/custom add [nombre] [respuesta]</code> para crear comandos personalizados. También puedes configurar respuestas automáticas y triggers específicos.</p>
+
+      <h4>¿PaiBot funciona en todos los tipos de canales?</h4>
+      <p>PaiBot funciona en canales de texto, hilos y puede responder a mensajes directos. Algunas funciones pueden estar limitadas según los permisos del canal.</p>
+
+      <h4>¿Cómo actualizo la configuración del bot?</h4>
+      <p>Usa <code>/config</code> para acceder al panel de configuración interactivo, donde puedes ajustar todas las opciones disponibles.</p>
+
+      <h3>🔧 Solución de Problemas Comunes</h3>
+
+      <h4>El bot está lento o no responde</h4>
+      <ul>
+        <li>Verifica tu conexión a internet</li>
+        <li>Comprueba el estado de Discord en status.discord.com</li>
+        <li>Usa <code>/ping</code> para verificar la latencia del bot</li>
+        <li>Si persiste, reporta el problema en nuestro servidor de soporte</li>
+      </ul>
+
+      <h4>Comandos de moderación no funcionan</h4>
+      <ul>
+        <li>Confirma que tienes permisos de administrador o moderador</li>
+        <li>Verifica que PaiBot tenga permisos superiores al usuario objetivo</li>
+        <li>Asegúrate de que el bot tenga los permisos específicos requeridos</li>
+      </ul>
+
+      <h4>Problemas con música o audio</h4>
+      <ul>
+        <li>Únete a un canal de voz antes de usar comandos de música</li>
+        <li>Verifica que el bot tenga permisos para conectarse y hablar</li>
+        <li>Algunos servidores pueden tener restricciones de música</li>
+      </ul>
+
+      <h3>📞 Canales de Soporte Oficial</h3>
+      <ul>
+        <li><strong>Servidor de Discord:</strong> Únete a nuestro servidor oficial para soporte en tiempo real</li>
+        <li><strong>Documentación:</strong> Consulta nuestra wiki completa con guías detalladas</li>
+        <li><strong>Reportar Bugs:</strong> Usa nuestro sistema de tickets para reportar problemas</li>
+        <li><strong>Sugerencias:</strong> Comparte tus ideas para nuevas funcionalidades</li>
+      </ul>
+
+      <h3>⏰ Horarios de Soporte</h3>
+      <p>Nuestro equipo de soporte está disponible:</p>
+      <ul>
+        <li><strong>Soporte Automatizado:</strong> 24/7 a través del bot</li>
+        <li><strong>Soporte Humano:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM (UTC)</li>
+        <li><strong>Emergencias:</strong> Disponible para problemas críticos</li>
+      </ul>
+
+      <h3>🎓 Recursos de Aprendizaje</h3>
+      <ul>
+        <li><strong>Tutoriales en Video:</strong> Guías paso a paso para todas las funciones</li>
+        <li><strong>Ejemplos Prácticos:</strong> Casos de uso reales y configuraciones</li>
+        <li><strong>Comunidad:</strong> Foro de usuarios para compartir tips y trucos</li>
+        <li><strong>Blog:</strong> Artículos sobre mejores prácticas y actualizaciones</li>
+      </ul>
+    </div>
+  </div>
