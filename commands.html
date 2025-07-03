@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comandos - PaiBot #6323</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0f23, #1a1a3a, #2d1b69, #4c2885);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease-in-out infinite;
+      color: white;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 12px 24px;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      margin-bottom: 30px;
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #fff, #a78bfa, #60a5fa);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 20px;
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #60a5fa;
+      margin: 30px 0 15px 0;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.1rem;
+    }
+
+    ul {
+      margin: 20px 0;
+      padding-left: 30px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    strong {
+      color: #a78bfa;
+    }
+
+    code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #fbbf24;
+      font-family: 'Courier New', monospace;
+    }
+
+    .command-section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 25px;
+      margin: 20px 0;
+      backdrop-filter: blur(10px);
+    }
+
+    .prefix-note {
+      background: rgba(251, 191, 36, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #fbbf24;
+      margin: 20px 0;
+    }
+
+    .personality-note {
+      background: rgba(167, 139, 250, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #a78bfa;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px 15px;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      .content {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Volver al Inicio
+      </a>
+      <h1>💻 Comandos</h1>
+      <p class="subtitle">PaiBot #6323 - Guía de Comandos</p>
+    </div>
+
+    <div class="content">
+      <div class="command-section">
+        <h3>🚀 Comandos Básicos</h3>
+        <ul>
+          <li><strong>!help</strong> - Muestra la lista de comandos disponibles</li>
+          <li><strong>!ping</strong> - Verifica la latencia del bot</li>
+          <li><strong>!info</strong> - Información sobre PaiBot #6323</li>
+          <li><strong>!invite</strong> - Obtén el enlace de invitación del bot</li>
+        </ul>
+      </div>
+
+      <div class="command-section">
+        <h3>👤 Comandos de Usuario</h3>
+        <ul>
+          <li><strong>!userinfo [@usuario]</strong> - Información detallada de un usuario</li>
+          <li><strong>!avatar [@usuario]</strong> - Muestra el avatar de un usuario</li>
+          <li><strong>!profile [@usuario]</strong> - Perfil completo del usuario</li>
+        </ul>
+      </div>
+
+      <div class="command-section">
+        <h3>🏠 Comandos de Servidor</h3>
+        <ul>
+          <li><strong>!serverinfo</strong> - Información completa del servidor</li>
+          <li><strong>!membercount</strong> - Número total de miembros</li>
+          <li><strong>!roles</strong> - Lista todos los roles del servidor</li>
+          <li><strong>!channels</strong> - Lista de canales del servidor</li>
+        </ul>
+      </div>
+
+      <div class="command-section">
+        <h3>🎮 Comandos de Entretenimiento</h3>
+        <ul>
+          <li><strong>!8ball [pregunta]</strong> - La bola mágica 8 responde tus preguntas</li>
+          <li><strong>!dice [número]</strong> - Lanza dados (por defecto 1d6)</li>
+          <li><strong>!flip</strong> - Lanza una moneda</li>
+          <li><strong>!joke</strong> - Cuenta un chiste aleatorio</li>
+          <li><strong>!meme</strong> - Genera un meme aleatorio</li>
+        </ul>
+      </div>
+
+      <div class="command-section">
+        <h3>✨ Comandos Temáticos de Paimon</h3>
+        <ul>
+          <li><strong>!paimon</strong> - Frases características de Paimon</li>
+          <li><strong>!emergency</strong> - "¡Comida de emergencia!" y otras frases icónicas</li>
+          <li><strong>!guide</strong> - Paimon actúa como tu guía personal</li>
+          <li><strong>!teyvat</strong> - Información aleatoria sobre el mundo de Genshin</li>
+        </ul>
+      </div>
+
+      <div class="command-section">
+        <h3>🛠️ Comandos de Utilidad</h3>
+        <ul>
+          <li><strong>!say [mensaje]</strong> - Hace que el bot repita un mensaje</li>
+          <li><strong>!embed [título] [descripción]</strong> - Crea un mensaje embed</li>
+          <li><strong>!poll [pregunta]</strong> - Crea una encuesta simple</li>
+          <li><strong>!remind [tiempo] [mensaje]</strong> - Configura un recordatorio</li>
+        </ul>
+      </div>
+
+      <div class="command-section">
+        <h3>👑 Comandos de Moderación (Solo Administradores)</h3>
+        <ul>
+          <li><strong>!clear [cantidad]</strong> - Elimina mensajes del chat</li>
+          <li><strong>!kick [@usuario] [razón]</strong> - Expulsa a un usuario</li>
+          <li><strong>!ban [@usuario] [razón]</strong> - Banea a un usuario</li>
+          <li><strong>!mute [@usuario] [tiempo]</strong> - Silencia a un usuario</li>
+          <li><strong>!warn [@usuario] [razón]</strong> - Advierte a un usuario</li>
+        </ul>
+      </div>
+
+      <div class="prefix-note">
+        <p><strong>💡 Nota:</strong> PaiBot #6323 usa el prefijo <code>!</code> para todos sus comandos. Algunos comandos pueden requerir permisos específicos para funcionar correctamente.</p>
+      </div>
+
+      <div class="personality-note">
+        <p><strong>🎭 Personalidad:</strong> PaiBot responde con la personalidad característica de Paimon, incluyendo sus frases icónicas y su actitud juguetona. ¡Prepárate para muchas referencias a comida de emergencia!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
