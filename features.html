@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Características - PaiBot #6323</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0f23, #1a1a3a, #2d1b69, #4c2885);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease-in-out infinite;
+      color: white;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 12px 24px;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      margin-bottom: 30px;
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #fff, #a78bfa, #60a5fa);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 20px;
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #a78bfa;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #60a5fa;
+      margin: 30px 0 15px 0;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.1rem;
+    }
+
+    ul {
+      margin: 20px 0;
+      padding-left: 30px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    strong {
+      color: #a78bfa;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 25px;
+      margin: 20px 0;
+      backdrop-filter: blur(10px);
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #a78bfa;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px 15px;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      .content {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Volver al Inicio
+      </a>
+      <h1>🌟 Características</h1>
+      <p class="subtitle">PaiBot #6323 - Funcionalidades Principales</p>
+    </div>
+
+    <div class="content">
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <h3>Inspirado en Paimon de Genshin Impact</h3>
+        <p>PaiBot #6323 es tu compañero de aventuras en Discord, inspirado en la querida mascota de Genshin Impact. Con una personalidad divertida y funcionalidades útiles, está diseñado para hacer tu experiencia en Discord más entretenida y productiva.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🎮</div>
+        <h3>Entretenimiento y Diversión</h3>
+        <ul>
+          <li><strong>Comandos Temáticos de Genshin:</strong> Referencias y easter eggs del mundo de Teyvat</li>
+          <li><strong>Juegos Interactivos:</strong> Trivia, adivinanzas y mini-juegos divertidos</li>
+          <li><strong>Generador de Memes:</strong> Crea contenido divertido para tu servidor</li>
+          <li><strong>Dados y Sorteos:</strong> Perfectos para eventos y decisiones grupales</li>
+          <li><strong>Respuestas Divertidas:</strong> Personalidad única con frases características</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🛠️</div>
+        <h3>Utilidades Prácticas</h3>
+        <ul>
+          <li><strong>Información del Servidor:</strong> Estadísticas y datos útiles de tu comunidad</li>
+          <li><strong>Gestión de Usuarios:</strong> Comandos para obtener información de miembros</li>
+          <li><strong>Herramientas de Texto:</strong> Formateo, conversiones y manipulación de texto</li>
+          <li><strong>Comandos de Ayuda:</strong> Sistema de ayuda integrado y fácil de usar</li>
+          <li><strong>Respuestas Automáticas:</strong> Configurables según las necesidades del servidor</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">👑</div>
+        <h3>Moderación Básica</h3>
+        <ul>
+          <li><strong>Comandos de Información:</strong> Detalles sobre usuarios y servidor</li>
+          <li><strong>Gestión de Mensajes:</strong> Herramientas básicas para mantener el orden</li>
+          <li><strong>Logs de Actividad:</strong> Registro de eventos importantes del servidor</li>
+          <li><strong>Configuración Flexible:</strong> Adapta el bot a las reglas de tu comunidad</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Personalidad Única</h3>
+        <p>PaiBot #6323 no es solo un bot funcional, sino un compañero con personalidad propia. Inspirado en Paimon, responde con carisma y humor, haciendo que cada interacción sea memorable y divertida para tu comunidad de Discord.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔧</div>
+        <h3>Fácil de Usar</h3>
+        <p>Diseñado pensando en la simplicidad, PaiBot #6323 es intuitivo y fácil de configurar. No necesitas conocimientos técnicos avanzados para aprovechar todas sus funcionalidades y empezar a disfrutar de sus características únicas.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Características Especiales</h3>
+        <ul>
+          <li><strong>Frases Icónicas:</strong> "¡Comida de emergencia!" y otras referencias de Paimon</li>
+          <li><strong>Temática Genshin:</strong> Comandos especiales del mundo de Teyvat</li>
+          <li><strong>Interacciones Divertidas:</strong> Respuestas con personalidad única</li>
+          <li><strong>Actualizaciones Constantes:</strong> Nuevas funciones y mejoras regulares</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
