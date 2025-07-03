@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte - PaiBot #6323</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0f23, #1a1a3a, #2d1b69, #4c2885);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease-in-out infinite;
+      color: white;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 12px 24px;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      margin-bottom: 30px;
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #fff, #a78bfa, #60a5fa);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 20px;
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #60a5fa;
+      margin: 30px 0 15px 0;
+      font-weight: 600;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      color: #a78bfa;
+      margin: 20px 0 10px 0;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.1rem;
+    }
+
+    ul {
+      margin: 20px 0;
+      padding-left: 30px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    strong {
+      color: #a78bfa;
+    }
+
+    code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #fbbf24;
+      font-family: 'Courier New', monospace;
+    }
+
+    .support-section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 25px;
+      margin: 20px 0;
+      backdrop-filter: blur(10px);
+    }
+
+    .quick-start {
+      background: rgba(16, 185, 129, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #10b981;
+      margin: 20px 0;
+    }
+
+    .troubleshooting {
+      background: rgba(245, 158, 11, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #f59e0b;
+      margin: 20px 0;
+    }
+
+    .tips {
+      background: rgba(167, 139, 250, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #a78bfa;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px 15px;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      .content {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Volver al Inicio
+      </a>
+      <h1>🆘 Centro de Ayuda</h1>
+      <p class="subtitle">PaiBot #6323 - Soporte y Ayuda</p>
+    </div>
+
+    <div class="content">
+      <div class="quick-start">
+        <h3>🚀 Primeros Pasos con PaiBot #6323</h3>
+        <p>¿Acabas de invitar a PaiBot a tu servidor? ¡Perfecto! Aquí tienes todo lo que necesitas saber:</p>
+        <ul>
+          <li><strong>Invitación:</strong> Usa el botón "Invitar PaiBot" en la página principal</li>
+          <li><strong>Permisos:</strong> Asegúrate de que el bot tenga permisos básicos (leer/enviar mensajes)</li>
+          <li><strong>Primer Comando:</strong> Prueba <code>!help</code> para ver todos los comandos disponibles</li>
+          <li><strong>Prefijo:</strong> Todos los comandos usan el prefijo <code>!</code></li>
+        </ul>
+      </div>
+
+      <div class="support-section">
+        <h3>❓ Preguntas Frecuentes</h3>
+        
+        <h4>¿Por qué PaiBot #6323 no responde a mis comandos?</h4>
+        <p>Verifica lo siguiente:</p>
+        <ul>
+          <li>Estás usando el prefijo correcto: <code>!</code></li>
+          <li>El bot tiene permisos para leer y enviar mensajes en el canal</li>
+          <li>El comando está escrito correctamente (usa <code>!help</code> para ver la lista)</li>
+          <li>El bot está en línea (aparece como activo en la lista de miembros)</li>
+        </ul>
+
+        <h4>¿Qué permisos necesita PaiBot #6323?</h4>
+        <p>Para funcionar correctamente, PaiBot necesita:</p>
+        <ul>
+          <li><strong>Básicos:</strong> Leer mensajes, enviar mensajes, insertar enlaces</li>
+          <li><strong>Para embeds:</strong> Insertar enlaces, adjuntar archivos</li>
+          <li><strong>Para moderación:</strong> Gestionar mensajes, expulsar miembros, banear miembros</li>
+          <li><strong>Para roles:</strong> Gestionar roles (solo si usas comandos de roles)</li>
+        </ul>
+
+        <h4>¿PaiBot #6323 funciona en mensajes directos?</h4>
+        <p>Algunos comandos básicos funcionan en DM, pero la mayoría están diseñados para uso en servidores. Los comandos de servidor obviamente no funcionarán en mensajes privados.</p>
+
+        <h4>¿Cómo puedo personalizar las respuestas del bot?</h4>
+        <p>PaiBot #6323 tiene una personalidad fija inspirada en Paimon, pero puedes sugerir nuevas frases o funcionalidades contactando al desarrollador.</p>
+      </div>
+
+      <div class="troubleshooting">
+        <h3>🔧 Solución de Problemas Comunes</h3>
+        
+        <h4>El bot no aparece en línea</h4>
+        <ul>
+          <li>Verifica que el bot esté correctamente invitado al servidor</li>
+          <li>Comprueba que no haya sido expulsado o baneado accidentalmente</li>
+          <li>El bot puede estar en mantenimiento temporal</li>
+        </ul>
+
+        <h4>Los comandos de moderación no funcionan</h4>
+        <ul>
+          <li>Verifica que tengas permisos de administrador o moderador</li>
+          <li>Asegúrate de que PaiBot tenga los permisos necesarios</li>
+          <li>El rol del bot debe estar por encima del rol del usuario objetivo</li>
+        </ul>
+
+        <h4>El bot responde lentamente</h4>
+        <ul>
+          <li>Esto puede deberse a la latencia de Discord</li>
+          <li>Usa <code>!ping</code> para verificar la latencia</li>
+          <li>Si persiste, puede ser un problema temporal del hosting</li>
+        </ul>
+      </div>
+
+      <div class="support-section">
+        <h3>🎭 Características Especiales de Paimon</h3>
+        <p>PaiBot #6323 tiene algunas características únicas:</p>
+        <ul>
+          <li><strong>Personalidad:</strong> Responde con el estilo característico de Paimon</li>
+          <li><strong>Frases Icónicas:</strong> Incluye referencias a "comida de emergencia" y otras frases famosas</li>
+          <li><strong>Temática Genshin:</strong> Comandos especiales relacionados con el mundo de Teyvat</li>
+          <li><strong>Diversión:</strong> Diseñado para ser entretenido y alegrar tu servidor</li>
+        </ul>
+      </div>
+
+      <div class="support-section">
+        <h3>📞 Contacto y Soporte</h3>
+        <p>Si necesitas ayuda adicional:</p>
+        <ul>
+          <li><strong>Desarrollador:</strong> Contacta al creador del bot para soporte directo</li>
+          <li><strong>Reportar Bugs:</strong> Informa cualquier problema o error que encuentres</li>
+          <li><strong>Sugerencias:</strong> Comparte ideas para nuevas funcionalidades</li>
+          <li><strong>Feedback:</strong> Tu opinión es importante para mejorar el bot</li>
+        </ul>
+      </div>
+
+      <div class="tips">
+        <h3>🎯 Consejos para Aprovechar al Máximo PaiBot #6323</h3>
+        <ul>
+          <li>Usa <code>!help</code> regularmente para descubrir nuevos comandos</li>
+          <li>Experimenta con los comandos temáticos de Paimon</li>
+          <li>Configura los permisos adecuados para cada funcionalidad</li>
+          <li>Comparte el bot con otros servidores si te gusta</li>
+          <li>Mantente al día con las actualizaciones y nuevas funciones</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
