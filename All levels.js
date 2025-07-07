@@ -81,5 +81,28 @@ export const levels = [
     "submitted_by_id": "672496337006362634",
     "submission_timestamp": "2025-07-02T21:49:13.088932",
     "all_levels_unique_id": 5
+  },
+  {
+    "id": "112",
+    "name": "Level Search",
+    "creator": "Desconocido",
+    "difficulty": "Desconocido",
+    "stars": "N/A",
+    "downloads": "N/A",
+    "likes": "N/A",
+    "song": "",
+    "length": "N/A",
+    "url": "https://gdbrowser.com/112",
+    "requested_by": {
+      "user_id": 672496337006362634,
+      "username": "flozwer",
+      "display_name": "FlozWer",
+      "platform": "Discord"
+    },
+    "requested_at": "2025-07-07T12:12:38.851969",
+    "server_id": 1215038551755067442,
+    "server_name": "𝐏𝐚𝐢𝐦𝐨𝐧𝐋𝐚𝐧𝐝𝐢𝐚",
+    "platform": "Discord",
+    "all_levels_unique_id": 6
   }
 ];
