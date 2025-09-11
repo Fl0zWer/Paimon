@@ -54,6 +54,11 @@ coverage.xml
 local_settings.py
 db.sqlite3
 
+# Database files (OAuth system)
+*.db
+paimon_users.db
+*.sqlite
+
 # Flask stuff:
 instance/
 .webassets-cache
