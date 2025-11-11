@@ -135,17 +135,18 @@ class AppConfig:
         print(f"  Echo SQL: {self.database.echo_sql}")
         
         print("\nDiscord:")
+        # Always mask sensitive data for security
         print(f"  Client ID: {'***' if mask_secrets else self.discord.client_id}")
         print(f"  Redirect URI: {self.discord.redirect_uri}")
-        # OAuth scopes can be sensitive, mask if needed
-        scopes_display = '***' if mask_secrets and len(self.discord.oauth_scopes) > 0 else ', '.join(self.discord.oauth_scopes)
-        print(f"  OAuth Scopes: {scopes_display}")
+        # OAuth scopes should always be masked as they can reveal permissions
+        print(f"  OAuth Scopes: {'***' if mask_secrets else ', '.join(self.discord.oauth_scopes)}")
         
         print("\nFlask:")
         print(f"  Debug: {self.flask.debug}")
         print(f"  Host: {self.flask.host}")
         print(f"  Port: {self.flask.port}")
-        print(f"  Secret Key: {'***' if mask_secrets else self.flask.secret_key[:10] + '...'}")
+        # Secret key should never be fully logged
+        print(f"  Secret Key: {'***' if mask_secrets else '*** (hidden for security)'}")
         
         print("\nLogging:")
         print(f"  Level: {self.logging.level}")
