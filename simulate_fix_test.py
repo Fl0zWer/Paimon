@@ -66,7 +66,7 @@ class RequirementsValidator:
         
         for line in self.requirements_content.strip().split('\n'):
             if line.strip() and not line.strip().startswith('#'):
-                print(f"  📦 {line.strip}")
+                print(f"  📦 {line.strip()}")
                 # Extract package name (before version specifier)
                 pkg_name = line.split('==')[0].split('>=')[0].split('<=')[0].strip()
                 self.found_dependencies.add(pkg_name.lower())
