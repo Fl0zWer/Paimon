@@ -243,7 +243,8 @@ def list_users():
             return jsonify(user_list)
     except Exception as e:
         logger.error(f"Error listing users: {e}")
-        return jsonify({'error': str(e)}), 500
+        # Don't expose stack trace details to users
+        return jsonify({'error': 'Failed to retrieve users'}), 500
 
 
 @app.route('/health')
@@ -260,9 +261,10 @@ def health_check():
         })
     except Exception as e:
         logger.error(f"Health check failed: {e}")
+        # Don't expose stack trace details to users
         return jsonify({
             'status': 'unhealthy',
-            'error': str(e)
+            'error': 'Database connection failed'
         }), 500
 
 

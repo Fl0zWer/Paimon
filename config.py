@@ -121,18 +121,31 @@ class AppConfig:
         print("=" * 60)
         
         print("\nDatabase:")
-        print(f"  URL: {self.database.url}")
+        # Mask database URL if it contains password
+        db_url = self.database.url
+        if mask_secrets and '@' in db_url:
+            # Mask password in connection string
+            parts = db_url.split('@')
+            if len(parts) > 1:
+                # Mask credentials before @
+                protocol_and_creds = parts[0].split('//')
+                if len(protocol_and_creds) > 1:
+                    db_url = f"{protocol_and_creds[0]}//***:***@{parts[1]}"
+        print(f"  URL: {db_url}")
         print(f"  Echo SQL: {self.database.echo_sql}")
         
         print("\nDiscord:")
-        print(f"  Client ID: {self.discord.client_id if not mask_secrets else '***'}")
+        print(f"  Client ID: {'***' if mask_secrets else self.discord.client_id}")
         print(f"  Redirect URI: {self.discord.redirect_uri}")
-        print(f"  OAuth Scopes: {', '.join(self.discord.oauth_scopes)}")
+        # OAuth scopes can be sensitive, mask if needed
+        scopes_display = '***' if mask_secrets and len(self.discord.oauth_scopes) > 0 else ', '.join(self.discord.oauth_scopes)
+        print(f"  OAuth Scopes: {scopes_display}")
         
         print("\nFlask:")
         print(f"  Debug: {self.flask.debug}")
         print(f"  Host: {self.flask.host}")
         print(f"  Port: {self.flask.port}")
+        print(f"  Secret Key: {'***' if mask_secrets else self.flask.secret_key[:10] + '...'}")
         
         print("\nLogging:")
         print(f"  Level: {self.logging.level}")
