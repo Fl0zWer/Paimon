@@ -1,4 +1,13 @@
-export const levels = [
+/**
+ * Accepted Levels
+ * Levels that have been reviewed and accepted by moderators.
+ * Now uses the unified level schema for consistency.
+ */
+
+import { normalizeLevel } from './levelSchema.js';
+
+// Raw accepted levels data
+const rawLevels = [
   {
     "id": "118509879",
     "name": "Unknown Level",
@@ -44,3 +53,6 @@ export const levels = [
     "accepted_unique_id": 1
   }
 ];
+
+// Export normalized levels
+export const levels = rawLevels.map(level => normalizeLevel(level));

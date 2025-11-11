@@ -1,4 +1,13 @@
-export const levels = [
+/**
+ * Form Submissions (Formularios)
+ * Level submissions from user forms.
+ * Now uses the unified level schema for consistency.
+ */
+
+import { normalizeLevel } from './levelSchema.js';
+
+// Raw form submission data
+const rawLevels = [
     {
         "id": "120512937",
         "name": "",
@@ -93,7 +102,7 @@ export const levels = [
         "author": "FlozWer",
         "usuario": "FlozWer",
         "stars": "0",
-        "difficulty": "M\u00e1s Dif\u00edcil",
+        "difficulty": "Más Difícil",
         "downloads": "115",
         "likes": "17",
         "importance": 55,
@@ -133,3 +142,6 @@ export const levels = [
         "uniqueId": 8
     }
 ];
+
+// Export normalized levels
+export const levels = rawLevels.map(level => normalizeLevel(level));

@@ -1,4 +1,13 @@
-export const levels = [
+/**
+ * All Levels
+ * Complete list of all level submissions.
+ * Now uses the unified level schema for consistency.
+ */
+
+import { normalizeLevel } from './levelSchema.js';
+
+// Raw level data from various sources
+const rawLevels = [
   {
     "id": "118509879",
     "name": "Skeletal Shenanigans",
@@ -106,3 +115,6 @@ export const levels = [
     "all_levels_unique_id": 6
   }
 ];
+
+// Export normalized levels
+export const levels = rawLevels.map(level => normalizeLevel(level));
