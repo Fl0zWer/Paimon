@@ -138,8 +138,9 @@ class AppConfig:
         # Always mask sensitive data for security
         print(f"  Client ID: {'***' if mask_secrets else self.discord.client_id}")
         print(f"  Redirect URI: {self.discord.redirect_uri}")
-        # OAuth scopes should always be masked as they can reveal permissions
-        print(f"  OAuth Scopes: {'***' if mask_secrets else ', '.join(self.discord.oauth_scopes)}")
+        # OAuth scopes should always be masked as they can reveal sensitive permissions
+        # Even with mask_secrets=False, we protect this information
+        print(f"  OAuth Scopes: ***")
         
         print("\nFlask:")
         print(f"  Debug: {self.flask.debug}")
