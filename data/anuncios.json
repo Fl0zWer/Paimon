@@ -1,4 +1,36 @@
 {
   "pendientes": [],
-  "enviados": []
+  "enviados": [
+    {
+      "id": "12c1a678-ef0d-40cc-a866-8f48f481149a",
+      "guild_id": 1215038551755067442,
+      "author_id": 672496337006362634,
+      "channel_id": 1246712004794777739,
+      "title": "Formulario para Paimontester y Moderadores",
+      "content": "hola a todos, aqui de nuevo que revivi, pero bueno aqui les dejo un formulario por si alguien quiere registrarse a este nuevo proyecto para mi mod de Geode, que estara disponible para todo publico a mediado de diciembre 8)  https://forms.gle/FGfapWNM5F8QbfDB7",
+      "image_url": "https://cdn.discordapp.com/ephemeral-attachments/1417653749245284465/1439047531265917101/download.png?ex=691918f3&is=6917c773&hm=573faefd56cb1fe74eb73c10160271174d006b974980206ae67cfc25b74ad1c8&",
+      "mention_role_id": null,
+      "ping_everyone": true,
+      "status": "SENT",
+      "scheduled_at": null,
+      "timezone": "America/Argentina/Buenos_Aires",
+      "published_message_id": 1439047681543770236,
+      "created_at": "2025-11-15T00:21:08.733331+00:00",
+      "updated_at": "2025-11-15T00:21:46.179779+00:00",
+      "audit": [
+        {
+          "timestamp": "2025-11-15T00:21:08.733364+00:00",
+          "user_id": 672496337006362634,
+          "event": "CREATE",
+          "notes": "Anuncio creado"
+        },
+        {
+          "timestamp": "2025-11-15T00:21:46.179760+00:00",
+          "user_id": 672496337006362634,
+          "event": "PUBLISH",
+          "notes": "Publicado con message_id 1439047681543770236"
+        }
+      ]
+    }
+  ]
 }
